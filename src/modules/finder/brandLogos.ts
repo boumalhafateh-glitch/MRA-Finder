@@ -1,23 +1,23 @@
-// Logos officiels — mix PNG/WEBP locaux (vrais logos) + SVG fallback
+// Logos officiels — mix PNG/WEBP/JPG locaux (vrais logos) + SVG fallback
 // Tous les fichiers sont dans public/brand-logos/ (servis par Vite à /brand-logos/...)
 
 const BRAND_FILE: Record<string, string> = {
   'AGM': 'agm.svg',
   'Alcatel': 'alcatel.png',
   'Apple': 'apple.png',
-  'ASUS': 'asus.png',
+  'ASUS': 'asus.svg', // PNG etait blanc sur blanc invisible, SVG noir lisible
   'Blackview': 'blackview.svg',
   'CAT': 'cat.svg',
   'Doogee': 'doogee.svg',
   'Fairphone': 'fairphone.png',
-  'Google': 'google.svg', // icon G simple-icons plus fiable que Dota 2
-  'Honor': 'honor.png',
+  'Google': 'google.svg', // G multicolore officiel - SVG icon plus propre que Dota 2 PNG
+  'Honor': 'honor.svg', // PNG blanc invisible, SVG noir HONOR lisible
   'HTC': 'htc.png',
   'Huawei': 'huawei.png',
   'Infinix': 'infinix.png',
   'itel': 'itel.png',
   'iQOO': 'iqoo.svg',
-  'Lenovo': 'lenovo.webp',
+  'Lenovo': 'lenovo.svg', // WEBP etait fond sombre, SVG rouge officiel mieux sur tuile blanche
   'LG': 'lg.png',
   'Meizu': 'meizu.svg',
   'Motorola': 'motorola.png',
@@ -32,7 +32,7 @@ const BRAND_FILE: Record<string, string> = {
   'Redmi': 'redmi.png',
   'Samsung': 'samsung.png',
   'Sharp': 'sharp.jpg',
-  'Sony': 'sony.svg', // vrai Sony en SVG noir plus fiable que Samsung mal labelle
+  'Sony': 'sony.svg', // PNG etait Samsung mal labelle, SVG noir SONY propre
   'TCL': 'tcl.png',
   'Tecno': 'tecno.jpg',
   'Ulefone': 'ulefone.jpg',
