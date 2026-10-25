@@ -77,6 +77,8 @@
   --font-display: 'Orbitron', 'Audiowide', 'Tahoma', 'Segoe UI', sans-serif;
   --font-body: 'Rajdhani', 'Exo', 'Tahoma', 'Segoe UI', sans-serif;
   --font-mono: 'Courier New', monospace;
+  --font-transformers: 'Orbitron', 'Audiowide', 'Russo One', 'Black Ops One', 'Teko', sans-serif;
+  --font-transformers-alt: 'Audiowide', 'Orbitron', sans-serif;
 
   /* ─── Animation Timings (CPU-optimized, NO GPU) ─── */
   --duration-fast: 200ms;
