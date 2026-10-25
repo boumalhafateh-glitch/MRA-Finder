@@ -39,14 +39,14 @@ function BrandLogo({ name, size = 42 }: { name: string; size?: number }) {
   const url = getBrandLogoUrl(name)
   if (!url || failed) {
     return (
-      <span className="finder-brand-mark" style={{ background: brandGradient(name), width: size, height: size }} aria-hidden="true">
+      <span className="finder-brand-logo" style={{ width: size, height: size, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#ffffff', color: '#0a1624', fontWeight: 800, fontSize: Math.round(size * 0.32), letterSpacing: 0.5 }} aria-hidden="true">
         {brandInitials(name)}
       </span>
     )
   }
   return (
     <span className="finder-brand-logo" style={{ width: size, height: size }} aria-hidden="true">
-      <img src={url} alt="" className="finder-brand-logo-img" loading="lazy" onError={() => setFailed(true)} referrerPolicy="no-referrer" />
+      <img src={url} alt="" className="finder-brand-logo-img" loading="lazy" onError={() => setFailed(true)} />
     </span>
   )
 }
