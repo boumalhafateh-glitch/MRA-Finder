@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  user-select: none;
+}
+input, textarea { user-select: text !important; pointer-events: auto !important; }
+
+::-webkit-scrollbar { width: 12px; height: 12px; }
+::-webkit-scrollbar-track { background: var(--bg-tertiary); border-radius: 6px; margin: 2px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 6px; border: 2px solid var(--bg-primary); min-height: 40px; }
+::-webkit-scrollbar-thumb:hover { background: var(--primary); border-color: transparent; }
+::-webkit-scrollbar-thumb:active { background: var(--cyan); border-color: transparent; }
+
+a { color: var(--primary); text-decoration: none; }
+a:hover { color: var(--cyan); }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 { font-size: 28px; }
+h2 { font-size: 22px; }
+h3 { font-size: 18px; }
+h4 { font-size: 15px; }
+h5 { font-size: 13px; }
+
+input, select, textarea, button {
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+/* Anneau de focus — accessibilité clavier (WCAG 2.2 · 2.4.7 « Focus Visible »).
+   L'anneur était supprimé globalement (`outline: none`) : un utilisateur au
+   clavier ne voyait plus jamais où il se trouvait, et un lecteur d'écran
+   n'avait plus d'indication de champ actif.
+   `:focus-visible` n'affiche l'anneau que pour la navigation clavier (pas au
+   clic de la souris) : rien ne change à l'usage souris, tout change au clavier.
+   `!important` est nécessaire parce que `components.css` neutralise
+   l'outline sur `.input` et que les styles inline Passent avant. */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+button:focus-visible,
+[role='button']:focus-visible,
+[tabindex]:focus-visible,
+.input:focus-visible {
+  outline: 2px solid var(--primary) !important;
+  outline-offset: 2px !important;
+  border-radius: 3px;
+}
+
+/* Sur fond sombre, l'anneau cyan peut se fondre : on lui ajoute un halo clair
+   pour rester visible sur les surfaces sombres comme claires. */
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--primary) 22%, transparent);
+}
+
+/* Champ encastré pour les thèmes néumorphiques ; `none` sinon, et les
+   états :focus déclarés plus loin restent prioritaires. */
+input, select, textarea {
+  box-shadow: var(--pressed, none);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Title Bar */
+.title-bar { height: 32px; background: var(--bg-primary); border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; user-select: none; flex-shrink: 0; }
+.title-bar-drag { flex: 1; height: 100%; display: flex; align-items: center; gap: 8px; padding-left: 14px; font-size: 11px; font-weight: 700; letter-spacing: 2px; color: var(--text-dim); text-transform: uppercase; -webkit-app-region: drag; }
+.title-bar-icon { color: var(--primary); font-size: 14px; }
+.title-bar-version { color: var(--primary); font-size: 8px; letter-spacing: 1px; }
+.title-bar-controls { display: flex; height: 100%; -webkit-app-region: no-drag; }
+.title-btn { width: 46px; height: 100%; border: none; background: transparent; color: var(--text-dim); font-size: 12px; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all 0.12s; font-family: inherit; }
+.title-btn:hover { background: color-mix(in srgb, var(--primary) 10%, transparent); color: var(--cyan); }
+.title-btn-close { font-size: 14px; }
+.title-btn-close:hover { background: color-mix(in srgb, var(--red) 25%, transparent) !important; color: var(--red) !important; }
+
+/* Update pill in title bar */
+.title-bar-update { display: flex; align-items: center; padding: 0 8px; -webkit-app-region: no-drag; }
+.up-pill { display: inline-flex; align-items: center; gap: 6px; height: 20px; padding: 0 10px; border-radius: 10px; font-size: 10px; font-weight: 600; letter-spacing: 0.4px; cursor: default; border: 1px solid transparent; white-space: nowrap; }
+.up-pill::before { content: ''; width: 7px; height: 7px; border-radius: 50%; background: currentColor; }
+.up-avail { color: var(--yellow); border-color: color-mix(in srgb, var(--yellow) 35%, transparent); background: color-mix(in srgb, var(--yellow) 10%, transparent); }
+.up-avail::before { background: var(--yellow); box-shadow: 0 0 6px var(--yellow); }
+.up-dl { color: var(--cyan); border-color: color-mix(in srgb, var(--primary) 35%, transparent); background: color-mix(in srgb, var(--primary) 8%, transparent); }
+.up-dl::before { background: var(--cyan); box-shadow: 0 0 6px var(--cyan); }
+.up-ready { cursor: pointer; color: var(--green); border-color: color-mix(in srgb, var(--green) 40%, transparent); background: color-mix(in srgb, var(--green) 12%, transparent); transition: all 0.15s; }
+.up-ready:hover { background: rgba(46, 204, 113, 0.22); }
+
+/* Language switcher (global) */
+.lang-switcher { position: relative; display: flex; align-items: center; padding: 0 4px; -webkit-app-region: no-drag; }
+.lang-switcher-btn { width: 34px; height: 100%; border: none; background: transparent; color: var(--text-dim); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: color 0.12s; border-radius: var(--radius-sm); }
+.lang-switcher-btn:hover { color: var(--cyan); background: color-mix(in srgb, var(--primary) 10%, transparent); }
+.lang-switcher-menu { position: absolute; top: calc(100% + 4px); inset-inline-end: 0; z-index: var(--z-dropdown); min-width: 150px; padding: 4px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--bg-secondary) 97%, transparent); border: 1px solid var(--border); box-shadow: var(--glass-shadow); backdrop-filter: blur(10px); }
+.lang-switcher-item { display: flex; align-items: center; gap: 8px; width: 100%; padding: 7px 10px; background: none; border: none; border-radius: var(--radius-sm); color: var(--text-dim); font-size: 12.5px; cursor: pointer; text-align: start; transition: background 0.12s, color 0.12s; }
+.lang-switcher-item:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); color: var(--text); }
+.lang-switcher-item.active { color: var(--cyan); font-weight: 700; }
+.lang-switcher-check { width: 14px; flex-shrink: 0; display: inline-flex; align-items: center; justify-content: center; color: var(--cyan); }
+
+/* Sélecteur de thème — jumeau du sélecteur de langue, dans la même barre. */
+.theme-switcher { position: relative; display: flex; align-items: center; padding: 0 4px; -webkit-app-region: no-drag; }
+.theme-switcher-btn { width: 34px; height: 100%; border: none; background: transparent; color: var(--text-dim); cursor: pointer; display: flex; align-items: center; justify-content: center; transition: color 0.12s, filter 0.2s; border-radius: var(--radius-sm); }
+.theme-switcher-btn:hover { color: var(--cyan); background: color-mix(in srgb, var(--primary) 10%, transparent); filter: drop-shadow(0 0 6px var(--primary-glow)); }
+.theme-switcher-menu { position: absolute; top: calc(100% + 4px); inset-inline-end: 0; z-index: var(--z-dropdown); min-width: 170px; padding: 4px; border-radius: var(--radius-sm); background: color-mix(in srgb, var(--bg-secondary) 97%, transparent); border: 1px solid var(--border); box-shadow: var(--glass-shadow); backdrop-filter: blur(10px); }
+.theme-switcher-item { display: flex; align-items: center; gap: 8px; width: 100%; padding: 7px 10px; background: none; border: none; border-radius: var(--radius-sm); color: var(--text-dim); font-size: 12.5px; cursor: pointer; text-align: start; transition: background 0.12s, color 0.12s; }
+.theme-switcher-item:hover { background: color-mix(in srgb, var(--primary) 8%, transparent); color: var(--text); }
+.theme-switcher-item.active { color: var(--cyan); font-weight: 700; }
+.theme-switcher-label { flex: 1; text-align: start; }
+.theme-swatch { width: 12px; height: 12px; flex-shrink: 0; border-radius: 3px; border: 1px solid color-mix(in srgb, var(--text) 22%, transparent); box-shadow: 0 0 6px var(--primary-glow); }
+
+/* POS/Store title bar */
+.titlebar-drag { -webkit-app-region: drag; }
+.titlebar-buttons { -webkit-app-region: no-drag; }

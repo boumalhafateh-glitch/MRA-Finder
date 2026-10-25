@@ -1,0 +1,97 @@
+:root {
+  /* ─── Palette Cyberpunk ─── */
+  --bg-primary: #050B14;
+  --bg-secondary: #071826;
+  --bg-tertiary: #0A1A2E;
+  --surface: #0D1F33;
+  --surface-2: #112840;
+  --surface-3: #15334D;
+
+  --primary: #00AEEF;
+  --primary-dim: #0077A0;
+  --primary-glow: rgba(0, 174, 239, 0.25);
+
+  --cyan: #00D9FF;
+  --cyan-glow: rgba(0, 217, 255, 0.2);
+
+  --accent: #1E90FF;
+  --accent-glow: rgba(30, 144, 255, 0.2);
+
+  --text: #EAF6FF;
+  --text-dim: #8899AA;
+  --text-muted: #7A8A9A;
+
+  --red: #FF3B3B;
+  --red-glow: rgba(255, 59, 59, 0.2);
+  --green: #00FF99;
+  --green-glow: rgba(0, 255, 153, 0.2);
+  --yellow: #FFD700;
+  --yellow-glow: rgba(255, 215, 0, 0.15);
+  --orange: #FF8C00;
+  --purple: #B44BFF;
+  --purple-glow: rgba(180, 75, 255, 0.2);
+  --blue: #1E90FF;
+  --blue-glow: rgba(30, 144, 255, 0.2);
+  --magenta: #FF4BD8;
+  --magenta-glow: rgba(255, 75, 216, 0.2);
+
+  /* ─── Identité Labo (animejs) : modes de mesure ─── */
+  --mode-diode: #00E08B;
+  --mode-ohm: #F5C518;
+  --mode-cont: #3FE0FF;
+  --mode-vdc: #4D7CFF;
+  --mode-vac: #FF8A3D;
+  --mode-adc: #E0FF5E;
+  --mode-aac: #FF4BD8;
+  --mode-cap: #C084FC;
+  --mode-freq: #FF5E8A;
+
+  /* ─── Identité Labo (animejs) : domaines de panne ─── */
+  --fault-power: #FF5C4D;
+  --fault-charging: #F5C518;
+  --fault-screen: #3FE0FF;
+  --fault-touch: #00E08B;
+  --fault-network: #B44BFF;
+  --fault-sound: #FF4BD8;
+  --fault-data: #4D7CFF;
+  --fault-unknown: #8899AA;
+
+  --border: rgba(0, 174, 239, 0.15);
+  --border-active: rgba(0, 217, 255, 0.4);
+
+  --radius: 10px;
+  --radius-sm: 6px;
+  --radius-lg: 16px;
+
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 0 30px rgba(0, 174, 239, 0.15);
+  --shadow-inner: inset 0 0 20px rgba(0, 174, 239, 0.05);
+
+  --glass-bg: rgba(13, 31, 51, 0.6);
+  --glass-border: rgba(0, 174, 239, 0.12);
+  --glass-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+  --sidebar-width: 220px;
+  --header-height: 60px;
+
+  --font-display: 'Orbitron', 'Audiowide', 'Tahoma', 'Segoe UI', sans-serif;
+  --font-body: 'Rajdhani', 'Exo', 'Tahoma', 'Segoe UI', sans-serif;
+  --font-mono: 'Courier New', monospace;
+
+  /* ─── Animation Timings (CPU-optimized, NO GPU) ─── */
+  --duration-fast: 200ms;
+  --duration-base: 350ms;
+  --duration-slow: 600ms;
+  --easing-smooth: ease-in-out;
+  --easing-bounce: ease-out;
+  --easing-elastic: ease-in;
+
+  /* ─── Z-Index Stack ─── */
+  --z-dropdown: 100;
+  --z-sticky: 500;
+  --z-fixed: 1000;
+  --z-modal-bg: 1100;
+  --z-modal: 1200;
+  --z-toast: 2000;
+  --z-tooltip: 2100;
+}

@@ -1,0 +1,36 @@
+{
+  "name": "mra-finder",
+  "version": "0.1.0",
+  "private": true,
+  "main": "electron/main.js",
+  "description": "Copie fidèle du module MRA FINDER (MRA-ERP) — moteur, schéma SQLite, preload et handlers IPC d'origine, sur une base de développement locale.",
+  "scripts": {
+    "start": "node scripts/dev.mjs",
+    "dev": "vite",
+    "app": "electron .",
+    "build": "vite build",
+    "preview": "vite preview --port 5175 --strictPort",
+    "lint": "tsc --noEmit --skipLibCheck",
+    "test": "jest --passWithNoTests",
+    "test:watch": "jest --watch --passWithNoTests"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "sql.js": "^1.14.1"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.9.1",
+    "@testing-library/react": "^16.3.2",
+    "@types/jest": "^30.0.0",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "electron": "^33.2.0",
+    "jest": "^30.4.2",
+    "jest-environment-jsdom": "^30.4.1",
+    "ts-jest": "^29.4.11",
+    "typescript": "^5.6.3",
+    "vite": "^6.0.0"
+  }
+}

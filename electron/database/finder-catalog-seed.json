@@ -1,0 +1,3068 @@
+{
+  "generated_from": "src/modules/sav/deviceCatalog.ts",
+  "generated_at": "2026-10-24T00:36:49.472Z",
+  "count": 306,
+  "duplicates_removed": 0,
+  "devices": [
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A18 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a18 4g",
+        "galaxy_a18_4g"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A08 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a08 4g",
+        "galaxy_a08_4g"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A07s",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a07s",
+        "galaxy_a07s"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S26 FE",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy s26 fe",
+        "galaxy_s26_fe"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F70 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f70 pro",
+        "galaxy_f70_pro"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold8 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z fold8 ultra",
+        "galaxy_z_fold8_ultra"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold8",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z fold8",
+        "galaxy_z_fold8"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip8",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z flip8",
+        "galaxy_z_flip8"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Watch Ultra2",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy watch ultra2",
+        "galaxy_watch_ultra2"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Watch9",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy watch9",
+        "galaxy_watch9"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M47",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m47",
+        "galaxy_m47"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A27",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a27",
+        "galaxy_a27"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A57",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a57",
+        "galaxy_a57"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A37",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a37",
+        "galaxy_a37"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M17e",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m17e",
+        "galaxy_m17e"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S26 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy s26 ultra",
+        "galaxy_s26_ultra"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S26",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy s26",
+        "galaxy_s26"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F70e",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f70e",
+        "galaxy_f70e"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A07",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a07",
+        "galaxy_a07"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z TriFold",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z trifold",
+        "galaxy_z_trifold"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M17",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m17",
+        "galaxy_m17"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F07",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f07",
+        "galaxy_f07"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M07",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m07",
+        "galaxy_m07"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A17 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a17 4g",
+        "galaxy_a17_4g"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab A11",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab a11",
+        "galaxy_tab_a11"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F17",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f17",
+        "galaxy_f17"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S25 FE",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy s25 fe",
+        "galaxy_s25_fe"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab S11 Ultra",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab s11 ultra",
+        "galaxy_tab_s11_ultra"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab S11",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab s11",
+        "galaxy_tab_s11"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab S10 Lite",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab s10 lite",
+        "galaxy_tab_s10_lite"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A07 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a07 4g",
+        "galaxy_a07_4g"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A17",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a17",
+        "galaxy_a17"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F36",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f36",
+        "galaxy_f36"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold7",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z fold7",
+        "galaxy_z_fold7"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip7",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z flip7",
+        "galaxy_z_flip7"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip7 FE",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy z flip7 fe",
+        "galaxy_z_flip7_fe"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Watch8 Classic",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy watch8 classic",
+        "galaxy_watch8_classic"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Watch8",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy watch8",
+        "galaxy_watch8"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M36",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m36",
+        "galaxy_m36"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S25 Edge",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy s25 edge",
+        "galaxy_s25_edge"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F56",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f56",
+        "galaxy_f56"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M56",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy m56",
+        "galaxy_m56"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy XCover7 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy xcover7 pro",
+        "galaxy_xcover7_pro"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab Active5 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab active5 pro",
+        "galaxy_tab_active5_pro"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Tab S10 FE",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy tab s10 fe",
+        "galaxy_tab_s10_fe"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F16",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy f16",
+        "galaxy_f16"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A56",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "galaxy a56",
+        "galaxy_a56"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "18 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "18 pro max",
+        "18_pro_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "18 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "18 pro",
+        "18_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Pad 9 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 9 pro",
+        "pad_9_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Pad 9",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 9",
+        "pad_9"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco C95 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco c95 pro",
+        "poco_c95_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "18 Fold",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "18 fold",
+        "18_fold"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Pad 9 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 9 pro max",
+        "pad_9_pro_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco X8 Power",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco x8 power",
+        "poco_x8_power"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco X8",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco x8",
+        "poco_x8"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco F9 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco f9 ultra",
+        "poco_f9_ultra"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco F9 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco f9 pro",
+        "poco_f9_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 17 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi note 17 pro max",
+        "redmi_note_17_pro_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 17 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi note 17 pro",
+        "redmi_note_17_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 17",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi note 17",
+        "redmi_note_17"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 17 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi note 17 4g",
+        "redmi_note_17_4g"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi 17C",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi 17c",
+        "redmi_17c"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Watch 6 Lite",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi watch 6 lite",
+        "redmi_watch_6_lite"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Watch 6 Active",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi watch 6 active",
+        "redmi_watch_6_active"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco M8x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco m8x",
+        "poco_m8x"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi M100",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi m100",
+        "redmi_m100"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi K100 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi k100 pro max",
+        "redmi_k100_pro_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi K100 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi k100 pro",
+        "redmi_k100_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi 17",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi 17",
+        "redmi_17"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi 17 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi 17 4g",
+        "redmi_17_4g"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco M8 Power",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco m8 power",
+        "poco_m8_power"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi K90 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi k90 ultra",
+        "redmi_k90_ultra"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "17T Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "17t pro",
+        "17t_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "17T",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "17t",
+        "17t"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Watch S5 46mm",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch s5 46mm",
+        "watch_s5_46mm"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "17 Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "17 max",
+        "17_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco Pad C1",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco pad c1",
+        "poco_pad_c1"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Black Shark Pad SE",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "black shark pad se",
+        "black_shark_pad_se"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco C81 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco c81 pro",
+        "poco_c81_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco C81",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco c81",
+        "poco_c81"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco C81x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco c81x",
+        "poco_c81x"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi K90 Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi k90 max",
+        "redmi_k90_max"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi K Pad 2",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi k pad 2",
+        "redmi_k_pad_2"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Pad 2 9.7",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi pad 2 9 7",
+        "redmi_pad_2_9_7"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi A7 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi a7 pro",
+        "redmi_a7_pro"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi A7",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi a7",
+        "redmi_a7"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco M8s",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco m8s",
+        "poco_m8s"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi R70m",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi r70m",
+        "redmi_r70m"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi R70",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi r70",
+        "redmi_r70"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi Note 15 Special",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi note 15 special",
+        "redmi_note_15_special"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi A7 Pro 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi a7 pro 4g",
+        "redmi_a7_pro_4g"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Redmi 15a",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "redmi 15a",
+        "redmi_15a"
+      ]
+    },
+    {
+      "brand": "Xiaomi",
+      "model": "Poco X8 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "poco x8 pro max",
+        "poco_x8_pro_max"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Xpad 30 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "xpad 30 pro",
+        "xpad_30_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 70 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "hot 70 pro",
+        "hot_70_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 70",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "hot 70",
+        "hot_70"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "GT 50 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "gt 50 pro",
+        "gt_50_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 60 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "note 60 ultra",
+        "note_60_ultra"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 60 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "note 60 pro",
+        "note_60_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 60",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "note 60",
+        "note_60"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 20",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "smart 20",
+        "smart_20"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note Edge",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "note edge",
+        "note_edge"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Xpad 20 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "xpad 20 pro",
+        "xpad_20_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 60i",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "hot 60i",
+        "hot_60i"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "GT 30",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "gt 30",
+        "gt_30"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 60",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "hot 60",
+        "hot_60"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 60 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "hot 60 pro",
+        "hot_60_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 60i 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "hot 60i 4g",
+        "hot_60i_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 10 HD",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "smart 10 hd",
+        "smart_10_hd"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 10 Plus",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "smart 10 plus",
+        "smart_10_plus"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 10",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "smart 10",
+        "smart_10"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Xpad 20",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "xpad 20",
+        "xpad_20"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "GT 30 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "gt 30 pro",
+        "gt_30_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Xpad GT",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "xpad gt",
+        "xpad_gt"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 50s",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 50s",
+        "note_50s"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 50x",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 50x",
+        "note_50x"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 50 Pro 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 50 pro 4g",
+        "note_50_pro_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 50 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 50 4g",
+        "note_50_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 9 HD",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "smart 9 hd",
+        "smart_9_hd"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 50 Pro 4G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "hot 50 pro 4g",
+        "hot_50_pro_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40S",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40s",
+        "note_40s"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 50i",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "hot 50i",
+        "hot_50i"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 9",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "smart 9",
+        "smart_9"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 50 4G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "hot 50 4g",
+        "hot_50_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Zero Flip",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "zero flip",
+        "zero_flip"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Hot 50",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "hot 50",
+        "hot_50"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Zero 40",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "zero 40",
+        "zero_40"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Zero 40 4G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "zero 40 4g",
+        "zero_40_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Xpad",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "xpad",
+        "xpad"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40X 5G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40x 5g",
+        "note_40x_5g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40 5G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40 5g",
+        "note_40_5g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "GT 20 Pro",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "gt 20 pro",
+        "gt_20_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40 Pro",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40 pro",
+        "note_40_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40 Pro 4G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40 pro 4g",
+        "note_40_pro_4g"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Note 40",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "note 40",
+        "note_40"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 8 Plus",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "smart 8 plus",
+        "smart_8_plus"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 8 Pro",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "smart 8 pro",
+        "smart_8_pro"
+      ]
+    },
+    {
+      "brand": "Infinix",
+      "model": "Smart 8 HD",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "smart 8 hd",
+        "smart_8_hd"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon Air",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon air",
+        "camon_air"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon Slim",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon slim",
+        "camon_slim"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Go 3 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "spark go 3 pro",
+        "spark_go_3_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 8 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pova 8 pro",
+        "pova_8_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon Slim 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon slim 4g",
+        "camon_slim_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 50 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "spark 50 pro",
+        "spark_50_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 8",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pova 8",
+        "pova_8"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pop X",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pop x",
+        "pop_x"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pop X 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pop x 4g",
+        "pop_x_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 50 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "spark 50 4g",
+        "spark_50_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 50",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "spark 50",
+        "spark_50"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 50 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon 50 ultra",
+        "camon_50_ultra"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 50 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon 50 pro",
+        "camon_50_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 50 Pro 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon 50 pro 4g",
+        "camon_50_pro_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 50 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "camon 50 4g",
+        "camon_50_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova Curve 2",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pova curve 2",
+        "pova_curve_2"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Go 3",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "spark go 3",
+        "spark_go_3"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Megapad SE",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "megapad se",
+        "megapad_se"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Megapad Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "megapad pro",
+        "megapad_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova Slim",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova slim",
+        "pova_slim"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Slim",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark slim",
+        "spark_slim"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 40",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark 40",
+        "spark_40"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Go",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark go",
+        "spark_go"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 40C",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark 40c",
+        "spark_40c"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 7 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova 7 pro",
+        "pova_7_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 7",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova 7",
+        "pova_7"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 40 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark 40 pro",
+        "spark_40_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 40 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark 40 4g",
+        "spark_40_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 7 Ultra",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova 7 ultra",
+        "pova_7_ultra"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 7 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova 7 4g",
+        "pova_7_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Go 2",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark go 2",
+        "spark_go_2"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova Curve",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "pova curve",
+        "pova_curve"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 40 Premier",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "camon 40 premier",
+        "camon_40_premier"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 40 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "camon 40 pro",
+        "camon_40_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 40 Pro 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "camon 40 pro 4g",
+        "camon_40_pro_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 40",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "camon 40",
+        "camon_40"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark Go 1S",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "spark go 1s",
+        "spark_go_1s"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Megapad 11",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "megapad 11",
+        "megapad_11"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pop 9 4G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "pop 9 4g",
+        "pop_9_4g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Megapad",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "megapad",
+        "megapad"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Camon 30S",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "camon 30s",
+        "camon_30s"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 30C 5G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "spark 30c 5g",
+        "spark_30c_5g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 30 5G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "spark 30 5g",
+        "spark_30_5g"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pop 9",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "pop 9",
+        "pop_9"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 30 Pro",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "spark 30 pro",
+        "spark_30_pro"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Spark 30",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "spark 30",
+        "spark_30"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Phantom V Fold2",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "phantom v fold2",
+        "phantom_v_fold2"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Phantom V Flip2",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "phantom v flip2",
+        "phantom_v_flip2"
+      ]
+    },
+    {
+      "brand": "Tecno",
+      "model": "Pova 6 Neo 5G",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "pova 6 neo 5g",
+        "pova_6_neo_5g"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X10 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x10 pro max",
+        "find_x10_pro_max"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X10",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x10",
+        "find_x10"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X10 E",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x10 e",
+        "find_x10_e"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "K14 Lite",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "k14 lite",
+        "k14_lite"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A7 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a7 pro",
+        "a7_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A7 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a7 pro max",
+        "a7_pro_max"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "K15",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "k15",
+        "k15"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno16c",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno16c",
+        "reno16c"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno16 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno16 pro",
+        "reno16_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno16",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno16",
+        "reno16"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno16 FS",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno16 fs",
+        "reno16_fs"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno16 F",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno16 f",
+        "reno16_f"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Pad 6",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 6",
+        "pad_6"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X9 Ultra",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x9 ultra",
+        "find_x9_ultra"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X9s Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x9s pro",
+        "find_x9s_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find X9s",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find x9s",
+        "find_x9s"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Pad 5 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 5 pro",
+        "pad_5_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Pad Mini",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad mini",
+        "pad_mini"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Watch X3 Mini",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch x3 mini",
+        "watch_x3_mini"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "F33 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "f33 pro",
+        "f33_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "F33",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "f33",
+        "f33"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6c",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6c",
+        "a6c"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6k",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6k",
+        "a6k"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "K15 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "k15 pro",
+        "k15_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Find N6",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "find n6",
+        "find_n6"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "K14",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "k14",
+        "k14"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Watch X3",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch x3",
+        "watch_x3"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6s Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6s pro",
+        "a6s_pro"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "K14x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "k14x",
+        "k14x"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno15 FS",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno15 fs",
+        "reno15_fs"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6t Pro 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6t pro 4g",
+        "a6t_pro_4g"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6t",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6t",
+        "a6t"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6t 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6t 4g",
+        "a6t_4g"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6",
+        "a6"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6 4g",
+        "a6_4g"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6s 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6s 4g",
+        "a6s_4g"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "A6s",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "a6s",
+        "a6s"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno15 Pro Mini",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno15 pro mini",
+        "reno15_pro_mini"
+      ]
+    },
+    {
+      "brand": "Oppo",
+      "model": "Reno15 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "reno15 pro max",
+        "reno15_pro_max"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4s",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4s",
+        "p4s"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "16x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "16x",
+        "16x"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 100x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "narzo 100x",
+        "narzo_100x"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4x 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4x 4g",
+        "p4x_4g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4R",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4r",
+        "p4r"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Watch S5",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch s5",
+        "watch_s5"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "16T",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "16t",
+        "16t"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C100x",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c100x",
+        "c100x"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C100i",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c100i",
+        "c100i"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 100 Lite",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "narzo 100 lite",
+        "narzo_100_lite"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C100 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c100 4g",
+        "c100_4g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C100",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c100",
+        "c100"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4 Lite",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4 lite",
+        "p4_lite"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Note 80",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "note 80",
+        "note_80"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C83",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c83",
+        "c83"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo Power",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "narzo power",
+        "narzo_power"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4 Lite 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4 lite 4g",
+        "p4_lite_4g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "16",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "16",
+        "16"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4 Power",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "p4 power",
+        "p4_power"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Neo8",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "neo8",
+        "neo8"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C85 4G",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "c85 4g",
+        "c85_4g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "16 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "16 pro",
+        "16_pro"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Pad 3",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "pad 3",
+        "pad_3"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 90",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "narzo 90",
+        "narzo_90"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 90X",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "narzo 90x",
+        "narzo_90x"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P3 Lite",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "p3 lite",
+        "p3_lite"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P3 Lite 4G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "p3 lite 4g",
+        "p3_lite_4g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4x",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "p4x",
+        "p4x"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C85 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "c85 pro",
+        "c85_pro"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C85",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "c85",
+        "c85"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "15 Lite",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "15 lite",
+        "15_lite"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Watch 5",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "watch 5",
+        "watch_5"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "15T",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "15t",
+        "15t"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "p4",
+        "p4"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "P4 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "p4 pro",
+        "p4_pro"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 80 Lite",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "narzo 80 lite",
+        "narzo_80_lite"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "15 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "15 pro",
+        "15_pro"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Note 70",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 70",
+        "note_70"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "15 (India)",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "15 india",
+        "15_india"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Note 70T",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "note 70t",
+        "note_70t"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Narzo 80 Lite 5G",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "narzo 80 lite 5g",
+        "narzo_80_lite_5g"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C73",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "c73",
+        "c73"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "C71",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "c71",
+        "c71"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Neo7 Turbo",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "neo7 turbo",
+        "neo7_turbo"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone Duo",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "iphone duo",
+        "iphone_duo"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 18 Pro Max",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "iphone 18 pro max",
+        "iphone_18_pro_max"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 18 Pro",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "iphone 18 pro",
+        "iphone_18_pro"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Ultra 4",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch ultra 4",
+        "watch_ultra_4"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 12",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch series 12",
+        "watch_series_12"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 12 Aluminum",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "watch series 12 aluminum",
+        "watch_series_12_aluminum"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 17e",
+      "year": 2026,
+      "modelRef": "",
+      "patterns": [
+        "iphone 17e",
+        "iphone_17e"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 17 Pro Max",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "iphone 17 pro max",
+        "iphone_17_pro_max"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 17 Pro",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "iphone 17 pro",
+        "iphone_17_pro"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone Air",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "iphone air",
+        "iphone_air"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 17",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "iphone 17",
+        "iphone_17"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Ultra 3",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "watch ultra 3",
+        "watch_ultra_3"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 11",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "watch series 11",
+        "watch_series_11"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 11 Aluminum",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "watch series 11 aluminum",
+        "watch_series_11_aluminum"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch SE 3",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "watch se 3",
+        "watch_se_3"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16e",
+      "year": 2025,
+      "modelRef": "",
+      "patterns": [
+        "iphone 16e",
+        "iphone_16e"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Pro Max",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "iphone 16 pro max",
+        "iphone_16_pro_max"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Pro",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "iphone 16 pro",
+        "iphone_16_pro"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16 Plus",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "iphone 16 plus",
+        "iphone_16_plus"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 16",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "iphone 16",
+        "iphone_16"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 10",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "watch series 10",
+        "watch_series_10"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 10 Aluminum",
+      "year": 2024,
+      "modelRef": "",
+      "patterns": [
+        "watch series 10 aluminum",
+        "watch_series_10_aluminum"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro Max",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "iphone 15 pro max",
+        "iphone_15_pro_max"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "iphone 15 pro",
+        "iphone_15_pro"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Plus",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "iphone 15 plus",
+        "iphone_15_plus"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "iphone 15",
+        "iphone_15"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Ultra 2",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "watch ultra 2",
+        "watch_ultra_2"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 9",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "watch series 9",
+        "watch_series_9"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 9 Aluminum",
+      "year": 2023,
+      "modelRef": "",
+      "patterns": [
+        "watch series 9 aluminum",
+        "watch_series_9_aluminum"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Pro Max",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "iphone 14 pro max",
+        "iphone_14_pro_max"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Pro",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "iphone 14 pro",
+        "iphone_14_pro"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Plus",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "iphone 14 plus",
+        "iphone_14_plus"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "iphone 14",
+        "iphone_14"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Ultra",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "watch ultra",
+        "watch_ultra"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "Watch Series 8",
+      "year": 2022,
+      "modelRef": "",
+      "patterns": [
+        "watch series 8",
+        "watch_series_8"
+      ]
+    }
+  ]
+}

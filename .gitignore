@@ -1,0 +1,48 @@
+# Dépendances et builds
+node_modules/
+dist/
+dist-renderer/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+*.log
+
+# Environnement — ne jamais publier
+.env
+.env.*
+!.env.example
+
+# Bases de données et journaux locaux — ne jamais publier
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+*.jsonl
+
+# Clés, licences, secrets — ne jamais publier
+*.pem
+*.key
+*.p12
+*.pfx
+*.lic
+*.keystore
+license.lic
+secrets/
+.private/
+
+# Éditeurs / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Fichiers locaux temporaires
+*.local
+tmp-*
