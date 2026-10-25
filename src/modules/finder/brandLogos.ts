@@ -1,47 +1,45 @@
-// Logos locaux — plus de CDN externe (Clearbit HS, cdn.simpleicons bloqué)
-// Tous les SVG sont dans public/brand-logos/ (19 issus de simple-icons + 19 générés)
-// Servi par Vite : /brand-logos/<slug>.svg
+// Logos officiels — mix PNG/WEBP locaux (vrais logos) + SVG fallback
+// Tous les fichiers sont dans public/brand-logos/ (servis par Vite à /brand-logos/...)
 
-// Slug local pour chaque marque (38)
-const BRAND_SLUG: Record<string, string> = {
-  'AGM': 'agm',
-  'Alcatel': 'alcatel',
-  'Apple': 'apple',
-  'ASUS': 'asus',
-  'Blackview': 'blackview',
-  'CAT': 'cat',
-  'Doogee': 'doogee',
-  'Fairphone': 'fairphone',
-  'Google': 'google',
-  'Honor': 'honor',
-  'HTC': 'htc',
-  'Huawei': 'huawei',
-  'Infinix': 'infinix',
-  'itel': 'itel',
-  'iQOO': 'iqoo',
-  'Lenovo': 'lenovo',
-  'LG': 'lg',
-  'Meizu': 'meizu',
-  'Motorola': 'motorola',
-  'Nokia': 'nokia',
-  'Nothing': 'nothing',
-  'nubia': 'nubia',
-  'OnePlus': 'oneplus',
-  'OPPO': 'oppo',
-  'Oukitel': 'oukitel',
-  'POCO': 'poco',
-  'Realme': 'realme',
-  'Redmi': 'redmi',
-  'Samsung': 'samsung',
-  'Sharp': 'sharp',
-  'Sony': 'sony',
-  'TCL': 'tcl',
-  'Tecno': 'tecno',
-  'Ulefone': 'ulefone',
-  'Vivo': 'vivo',
-  'Wiko': 'wiko',
-  'Xiaomi': 'xiaomi',
-  'ZTE': 'zte',
+const BRAND_FILE: Record<string, string> = {
+  'AGM': 'agm.svg',
+  'Alcatel': 'alcatel.png',
+  'Apple': 'apple.png',
+  'ASUS': 'asus.png',
+  'Blackview': 'blackview.svg',
+  'CAT': 'cat.svg',
+  'Doogee': 'doogee.svg',
+  'Fairphone': 'fairphone.png',
+  'Google': 'google.svg', // icon G simple-icons plus fiable que Dota 2
+  'Honor': 'honor.png',
+  'HTC': 'htc.png',
+  'Huawei': 'huawei.png',
+  'Infinix': 'infinix.png',
+  'itel': 'itel.png',
+  'iQOO': 'iqoo.svg',
+  'Lenovo': 'lenovo.webp',
+  'LG': 'lg.png',
+  'Meizu': 'meizu.svg',
+  'Motorola': 'motorola.png',
+  'Nokia': 'nokia.png',
+  'Nothing': 'nothing.png',
+  'nubia': 'nubia.svg',
+  'OnePlus': 'oneplus.png',
+  'OPPO': 'oppo.png',
+  'Oukitel': 'oukitel.svg',
+  'POCO': 'poco.webp',
+  'Realme': 'realme.png',
+  'Redmi': 'redmi.png',
+  'Samsung': 'samsung.png',
+  'Sharp': 'sharp.jpg',
+  'Sony': 'sony.svg', // vrai Sony en SVG noir plus fiable que Samsung mal labelle
+  'TCL': 'tcl.png',
+  'Tecno': 'tecno.jpg',
+  'Ulefone': 'ulefone.jpg',
+  'Vivo': 'vivo.png',
+  'Wiko': 'wiko.jpg',
+  'Xiaomi': 'xiaomi.png',
+  'ZTE': 'zte.png',
 }
 
 function normalizeBrand(name: string): string {
@@ -51,14 +49,11 @@ function normalizeBrand(name: string): string {
 export function getBrandLogoUrl(brandName: string): string | null {
   const name = normalizeBrand(brandName)
   if (!name) return null
-  // Recherche directe (casse sensible)
-  if (BRAND_SLUG[name]) return `/brand-logos/${BRAND_SLUG[name]}.svg`
-  // Recherche insensible à la casse
+  if (BRAND_FILE[name]) return `/brand-logos/${BRAND_FILE[name]}`
   const lower = name.toLowerCase()
-  for (const [k, v] of Object.entries(BRAND_SLUG)) {
-    if (k.toLowerCase() === lower) return `/brand-logos/${v}.svg`
+  for (const [k, v] of Object.entries(BRAND_FILE)) {
+    if (k.toLowerCase() === lower) return `/brand-logos/${v}`
   }
-  // Fallback générique : slug dérivé (ex: "OnePlus" -> "oneplus")
   const slug = lower.replace(/[^a-z0-9]/g, '')
   if (slug) return `/brand-logos/${slug}.svg`
   return null
@@ -70,5 +65,4 @@ export function getBrandFallbackIcon(name: string): string {
   return (words[0][0] + (words[1]?.[0] || '')).toUpperCase()
 }
 
-// Pour debug : liste tous les slugs disponibles
-export const ALL_BRAND_SLUGS = Object.values(BRAND_SLUG)
+export const ALL_BRAND_SLUGS = Object.values(BRAND_FILE)
