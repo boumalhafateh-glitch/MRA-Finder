@@ -99,6 +99,7 @@ export default function FinderModule() {
   const [favorites, setFavorites] = useState<Array<{ id: number; kind: string; title: string }>>(
     () => lsGet('finder:fav', [])
   )
+  const [tfOn, setTfOn] = useState<boolean>(() => lsGet('finder:tf', true))
 
   const sequence = useRef<Record<Flow, number>>({ search: 0, device: 0, part: 0, ic: 0, brand: 0 })
   const lastId = useRef<Record<Flow, number | null>>({ search: null, device: null, part: null, ic: null, brand: null })
@@ -362,7 +363,7 @@ export default function FinderModule() {
   const totalPages = result ? Math.ceil(result.total / PAGE_SIZE) : 0
 
   return (
-    <div className="finder-root">
+    <div className={`finder-root${tfOn ? ' finder-root--transformers' : ''}`}>
       <header className="finder-head">
         <div>
           <div className="finder-kicker">{t('finder.kicker')}</div>
@@ -372,6 +373,9 @@ export default function FinderModule() {
         <div className="finder-head-right">
           <span className="finder-chip">{t('finder.status.local')}</span>
           <span className="finder-chip finder-chip-dim">{t('finder.status.offline')}</span>
+          <button type="button" className={`transformers-toggle${tfOn ? ' is-active' : ''}`} onClick={() => { const v = !tfOn; setTfOn(v); lsSet('finder:tf', v) }} title={tfOn ? 'Désactiver le style Transformers' : 'Activer le style Transformers'} aria-pressed={tfOn}>
+            {tfOn ? 'TRANSFORMERS ON' : 'TRANSFORMERS OFF'}
+          </button>
           <button type="button" className="finder-link" onClick={() => { setDataOpen(v => !v); if (!dataOpen) { void checkHealth(); void loadHistory() } }} aria-expanded={dataOpen}>
             {dataOpen ? 'Fermer' : 'Donnees'}
           </button>
