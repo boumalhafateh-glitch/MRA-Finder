@@ -14,7 +14,7 @@ const CSV_TEMPLATE = [
   'battery;Samsung;Galaxy A18 4G;;Batterie;EB-BA185ABY;declared;;Capacité d’origine',
 ].join('\n')
 
-// Brand color generator — deterministic palette
+// Brand color generator - deterministic palette
 const BRAND_COLORS = [
   ['#00d9ff','#0088ff'], ['#b44bff','#6a00ff'], ['#ff4bd8','#ff006a'],
   ['#00ff99','#00c853'], ['#ff8c00','#ff3b3b'], ['#ffd700','#ff8c00'],
@@ -38,7 +38,7 @@ function finderApi() {
   return window.api?.finder as any
 }
 
-// Local storage helpers (recent, fav) — safe when no localStorage (tests)
+// Local storage helpers (recent, fav) - safe when no localStorage (tests)
 function lsGet(key: string, fallback: any) {
   try { const v = typeof localStorage !== 'undefined' ? localStorage.getItem(key) : null; return v ? JSON.parse(v) : fallback } catch { return fallback }
 }
@@ -90,7 +90,7 @@ export default function FinderModule() {
   const [importing, setImporting] = useState(false)
   const [dragOver, setDragOver] = useState(false)
 
-  // V2 — data recovery & extras
+  // V2 - data recovery & extras
   const [dataOpen, setDataOpen] = useState(false)
   const [health, setHealth] = useState<any>(null)
   const [history, setHistory] = useState<any[]>([])
@@ -373,7 +373,7 @@ export default function FinderModule() {
           <span className="finder-chip">{t('finder.status.local')}</span>
           <span className="finder-chip finder-chip-dim">{t('finder.status.offline')}</span>
           <button type="button" className="finder-link" onClick={() => { setDataOpen(v => !v); if (!dataOpen) { void checkHealth(); void loadHistory() } }} aria-expanded={dataOpen}>
-            {dataOpen ? '✕ ' : '⬢ '} Données
+            {dataOpen ? 'Fermer' : 'Donnees'}
           </button>
           <button type="button" className="finder-link" onClick={() => setImportOpen((open) => !open)} aria-expanded={importOpen}>
             {t('finder.import.open')}
@@ -383,11 +383,11 @@ export default function FinderModule() {
 
       {dataOpen && (
         <section className="finder-import" style={{ animation: 'finderSlideUp 0.3s ease' }}>
-          <div className="finder-block-title">Données &amp; récupération</div>
-          <p className="finder-import-note">Exportez vos données pour sauvegarde, vérifiez la santé de la base et consultez l'historique des imports. Tout est local — aucune donnée ne quitte ce poste.</p>
+          <div className="finder-block-title">Donnees et recuperation</div>
+          <p className="finder-import-note">Exportez vos données pour sauvegarde, vérifiez la santé de la base et consultez l'historique des imports. Tout est local - aucune donnée ne quitte ce poste.</p>
 
           <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
-            <button type="button" className="finder-btn" onClick={() => void doExport('all')} style={{ fontSize: 12, padding: '8px 14px' }}>⬇ Tout exporter (JSON)</button>
+            <button type="button" className="finder-btn" onClick={() => void doExport('all')} style={{ fontSize: 12, padding: '8px 14px' }}>Tout exporter (JSON)</button>
             <button type="button" className="finder-btn finder-btn-ghost" onClick={() => void doExport('devices')} style={{ marginTop: 0, fontSize: 12 }}>Appareils</button>
             <button type="button" className="finder-btn finder-btn-ghost" onClick={() => void doExport('brands')} style={{ marginTop: 0, fontSize: 12 }}>Marques</button>
             <button type="button" className="finder-btn finder-btn-ghost" onClick={() => void doExport('parts')} style={{ marginTop: 0, fontSize: 12 }}>Pièces</button>
@@ -396,13 +396,13 @@ export default function FinderModule() {
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12, marginTop: 4 }}>
             <div style={{ padding: '12px 14px', borderRadius: 10, background: 'rgba(0,217,255,0.05)', border: '1px solid rgba(0,217,255,0.12)' }}>
               <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: 8, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                Santé de la base <button type="button" className="finder-link" style={{ fontSize: 11 }} onClick={() => void checkHealth()}>Vérifier</button>
+                Sante de la base <button type="button" className="finder-link" style={{ fontSize: 11 }} onClick={() => void checkHealth()}>Vérifier</button>
               </div>
               {health ? (
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
-                  <span style={{ fontSize: 12, fontWeight: 700, color: health.ok ? '#00ff99' : '#ffcf7a' }}>{health.ok ? '✓ Base saine' : '⚠ Attention requise'}</span>
+                  <span style={{ fontSize: 12, fontWeight: 700, color: health.ok ? '#00ff99' : '#ffcf7a' }}>{health.ok ? 'Base saine' : 'Attention requise'}</span>
                   {health.checks?.map((c: any) => (
-                    <span key={c.name} style={{ fontSize: 11, color: c.ok ? 'var(--text-dim)' : '#ff9d9d' }}>{c.ok ? '✓' : '✗'} {c.detail}</span>
+                    <span key={c.name} style={{ fontSize: 11, color: c.ok ? 'var(--text-dim)' : '#ff9d9d' }}>{c.ok ? 'OK' : 'KO'} {c.detail}</span>
                   ))}
                 </div>
               ) : (
@@ -424,7 +424,7 @@ export default function FinderModule() {
                     {history.map((h: any) => (
                       <li key={h.id} style={{ fontSize: 11, display: 'flex', justifyContent: 'space-between', padding: '4px 6px', borderRadius: 6, background: 'rgba(255,255,255,0.04)' }}>
                         <span style={{ fontWeight: 600 }}>{h.file_name || h.kind} · {h.status}</span>
-                        <span style={{ color: 'var(--text-dim)' }}>{h.inserted}+ {h.updated}~ {h.errors}✗</span>
+                        <span style={{ color: 'var(--text-dim)' }}>{h.inserted}+ {h.updated}~ {h.errors}</span>
                       </li>
                     ))}
                   </ul>
@@ -439,7 +439,7 @@ export default function FinderModule() {
             <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
               <div>
                 <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: 6, display: 'flex', justifyContent: 'space-between' }}>
-                  Dernières recherches
+                  Dernieres recherches
                   <button type="button" className="finder-link" style={{ fontSize: 11 }} onClick={() => { setRecentSearches([]); lsSet('finder:recent', []) }}>Effacer</button>
                 </div>
                 <div className="finder-recent" style={{ marginTop: 0 }}>
@@ -449,9 +449,9 @@ export default function FinderModule() {
                 </div>
               </div>
               <div>
-                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: 6 }}>☆ Favoris</div>
+                <div style={{ fontSize: 11, fontWeight: 700, letterSpacing: 1, textTransform: 'uppercase', color: 'var(--text-dim)', marginBottom: 6 }}>Favoris</div>
                 {favorites.length === 0 ? (
-                  <span style={{ fontSize: 12, color: 'var(--text-dim)' }}>Aucun favori — cliquez ☆ sur une fiche</span>
+                  <span style={{ fontSize: 12, color: 'var(--text-dim)' }}>Aucun favori - cliquez sur une fiche</span>
                 ) : (
                   <div className="finder-recent" style={{ marginTop: 0 }}>
                     {favorites.map(f => (
@@ -493,7 +493,7 @@ export default function FinderModule() {
                   {importReport.rejectedRows && importReport.rejectedRows.length > 0 && (
                     <ul className="finder-reject-list">
                       {importReport.rejectedRows.map((row) => (
-                        <li key={row.line + ':' + row.reason}><span>{t('finder.import.line', { line: row.line })}</span>{' — '}<span>{t('finder.import.reason.' + row.reason)}</span>{row.detail ? <span>{' : ' + row.detail}</span> : null}</li>
+                        <li key={row.line + ':' + row.reason}><span>{t('finder.import.line', { line: row.line })}</span>{' - '}<span>{t('finder.import.reason.' + row.reason)}</span>{row.detail ? <span>{' : ' + row.detail}</span> : null}</li>
                       ))}
                     </ul>
                   )}
@@ -563,7 +563,7 @@ export default function FinderModule() {
               <span className="finder-toolbar-label" style={{ fontSize: 11 }}>Trier :</span>
               <select className="finder-sort-select" value={sortBy} onChange={e => setSortBy(e.target.value as SortOpt)} aria-label="Trier">
                 <option value="relevance">Pertinence</option>
-                <option value="name">Nom A→Z</option>
+                <option value="name">Nom A-Z</option>
                 <option value="brand">Marque</option>
               </select>
               <button type="button" className="finder-link" onClick={goHome}>{t('finder.action.home')}</button>
@@ -604,13 +604,13 @@ export default function FinderModule() {
           </ul>
           {totalPages > 1 && (
             <div className="finder-pagination">
-              <button type="button" className="finder-page-btn" disabled={currentPage <= 1} onClick={() => void goPage(currentPage - 1)}>‹</button>
+              <button type="button" className="finder-page-btn" disabled={currentPage <= 1} onClick={() => void goPage(currentPage - 1)}>{'<'}</button>
               {Array.from({ length: Math.min(totalPages, 7) }, (_, i) => {
                 const p = i + 1
                 return <button key={p} type="button" className={'finder-page-btn' + (p === currentPage ? ' is-active' : '')} onClick={() => void goPage(p)}>{p}</button>
               })}
-              {totalPages > 7 && <span style={{ fontSize: 12, color: 'var(--text-dim)', padding: '0 4px' }}>… {totalPages}</span>}
-              <button type="button" className="finder-page-btn" disabled={currentPage >= totalPages} onClick={() => void goPage(currentPage + 1)}>›</button>
+              {totalPages > 7 && <span style={{ fontSize: 12, color: 'var(--text-dim)', padding: '0 4px' }}>... {totalPages}</span>}
+              <button type="button" className="finder-page-btn" disabled={currentPage >= totalPages} onClick={() => void goPage(currentPage + 1)}>{'>'}</button>
             </div>
           )}
         </section>
@@ -634,7 +634,7 @@ export default function FinderModule() {
       {deviceError && <div className="finder-notice finder-notice-error" role="status"><p>{deviceError}</p><span className="finder-notice-actions"><button type="button" className="finder-btn finder-btn-ghost" onClick={retryDevice} style={{ marginTop: 0 }}>{t('finder.action.retry')}</button></span></div>}
       {device && (
         <section className="finder-sheet">
-          <div className="finder-sheet-head"><div><div className="finder-kicker">{device.brand_name}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{device.commercial_name}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(device.id, 'device', device.commercial_name)} title={isFav(device.id, 'device') ? 'Retirer des favoris' : 'Ajouter aux favoris'}>{isFav(device.id, 'device') ? '★' : '☆'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
+          <div className="finder-sheet-head"><div><div className="finder-kicker">{device.brand_name}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{device.commercial_name}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(device.id, 'device', device.commercial_name)} title={isFav(device.id, 'device') ? 'Retirer des favoris' : 'Ajouter aux favoris'}>{isFav(device.id, 'device') ? 'Retirer' : 'Favori'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
           <dl className="finder-facts"><div><dt>{t('finder.device.brand')}</dt><dd>{device.brand_name}</dd></div><div><dt>{t('finder.device.model_ref')}</dt><dd>{device.model_ref || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.device.year')}</dt><dd>{device.release_year || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.device.aliases')}</dt><dd>{device.aliases.length ? device.aliases.map((alias) => alias.alias).join(', ') : t('finder.device.not_available')}</dd></div></dl>
           {device.missing.length > 0 && <div className="finder-missing"><div className="finder-missing-title">{t('finder.device.missing')}</div><ul>{device.missing.map((field) => (<li key={field}>{t('finder.device.missing_' + field)}</li>))}</ul></div>}
           <div className="finder-block"><div className="finder-block-title">{t('finder.device.parts')}</div>{device.parts.length === 0 ? <p className="finder-block-empty">{t('finder.device.parts_empty')}</p> : <ul className="finder-list">{device.parts.map((part) => (<li key={part.id}><button type="button" className="finder-row" onClick={() => void openPart(part.id)}><span className="finder-row-main">{part.name} <span className={`finder-badge finder-badge-${part.confidence}`}>{t('finder.confidence.' + part.confidence)}</span></span><span className="finder-row-sub">{[part.category_name, part.oem_ref].filter(Boolean).join(' · ')}</span></button></li>))}</ul>}</div>
@@ -647,7 +647,7 @@ export default function FinderModule() {
       {partError && <div className="finder-notice finder-notice-error" role="status"><p>{partError}</p><span className="finder-notice-actions"><button type="button" className="finder-btn finder-btn-ghost" onClick={retryPart} style={{ marginTop: 0 }}>{t('finder.action.retry')}</button></span></div>}
       {part && (
         <section className="finder-sheet">
-          <div className="finder-sheet-head"><div><div className="finder-kicker">{part.category_name || t('finder.device.not_available')}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{part.name}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(part.id, 'part', part.name)} title={isFav(part.id, 'part') ? 'Retirer' : 'Favori'}>{isFav(part.id, 'part') ? '★' : '☆'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
+          <div className="finder-sheet-head"><div><div className="finder-kicker">{part.category_name || t('finder.device.not_available')}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{part.name}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(part.id, 'part', part.name)} title={isFav(part.id, 'part') ? 'Retirer' : 'Favori'}>{isFav(part.id, 'part') ? 'Retirer' : 'Favori'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
           <dl className="finder-facts"><div><dt>{t('finder.part.oem_ref')}</dt><dd>{part.oem_ref || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.part.status')}</dt><dd><span className={`finder-badge finder-badge-${part.confidence}`}>{t('finder.confidence.' + part.confidence)}</span></dd></div><div><dt>{t('finder.part.refs')}</dt><dd>{part.refs.length ? part.refs.map((ref) => ref.value).join(', ') : t('finder.device.not_available')}</dd></div></dl>
           {part.notes && <p className="finder-part-notes">{part.notes}</p>}
           <div className="finder-block"><div className="finder-block-title">{t('finder.part.devices')}</div>{part.devices.length === 0 ? <p className="finder-block-empty">{t('finder.part.devices_empty')}</p> : <ul className="finder-list">{part.devices.map((row) => (<li key={row.id}><button type="button" className="finder-row" onClick={() => void openDevice(row.id)}><span className="finder-row-main">{row.commercial_name}</span><span className="finder-row-sub">{[row.brand_name, row.model_ref, row.release_year].filter(Boolean).join(' · ')}</span></button></li>))}</ul>}</div>
@@ -659,7 +659,7 @@ export default function FinderModule() {
       {icError && <div className="finder-notice finder-notice-error" role="status"><p>{icError}</p><span className="finder-notice-actions"><button type="button" className="finder-btn finder-btn-ghost" onClick={retryIc} style={{ marginTop: 0 }}>{t('finder.action.retry')}</button></span></div>}
       {ic && (
         <section className="finder-sheet">
-          <div className="finder-sheet-head"><div><div className="finder-kicker">{ic.manufacturer || t('finder.device.not_available')}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{ic.ref}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(ic.id, 'ic', ic.ref)}>{isFav(ic.id, 'ic') ? '★' : '☆'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
+          <div className="finder-sheet-head"><div><div className="finder-kicker">{ic.manufacturer || t('finder.device.not_available')}</div><h2 className="finder-sheet-title" tabIndex={-1} ref={sheetRef}>{ic.ref}</h2></div><div style={{ display: 'flex', gap: 8, alignItems: 'center' }}><button type="button" className="finder-link" style={{ fontSize: 16 }} onClick={() => toggleFav(ic.id, 'ic', ic.ref)}>{isFav(ic.id, 'ic') ? 'Retirer' : 'Favori'}</button><button type="button" className="finder-link" onClick={closeSheet}>{t('finder.action.close')}</button></div></div>
           <dl className="finder-facts"><div><dt>{t('finder.ic.marking')}</dt><dd>{ic.marking || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.ic.family')}</dt><dd>{ic.family || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.ic.function')}</dt><dd>{ic.function || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.ic.package')}</dt><dd>{ic.package || t('finder.device.not_available')}</dd></div><div><dt>{t('finder.ic.pins')}</dt><dd>{ic.pins ?? t('finder.device.not_available')}</dd></div><div><dt>{t('finder.ic.voltage')}</dt><dd>{ic.voltage_min != null || ic.voltage_max != null ? `${ic.voltage_min ?? '?'} – ${ic.voltage_max ?? '?'} V` : t('finder.device.not_available')}</dd></div></dl>
           {ic.notes && <p className="finder-part-notes">{ic.notes}</p>}
           <div className="finder-block"><div className="finder-block-title">{t('finder.device.ics')}</div>{ic.devices.length === 0 ? <p className="finder-block-empty">{t('finder.device.ics_empty')}</p> : <ul className="finder-list">{ic.devices.map((row) => (<li key={row.id}><button type="button" className="finder-row" onClick={() => void openDevice(row.id)}><span className="finder-row-main">{row.commercial_name}</span><span className="finder-row-sub">{[row.brand_name, row.model_ref, row.board_area].filter(Boolean).join(' · ')}</span></button></li>))}</ul>}</div>
@@ -693,7 +693,7 @@ export default function FinderModule() {
               <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap', marginBottom: 10 }}>
                 <input className="finder-input finder-brand-search" value={brandQuery} onChange={(event) => setBrandQuery(event.target.value)} placeholder={t('finder.brands.search')} aria-label={t('finder.brands.search')} spellCheck={false} autoComplete="off" style={{ flex: 1, minWidth: 180 }} />
                 <select className="finder-sort-select" value={brandSort} onChange={e => setBrandSort(e.target.value as any)} aria-label="Trier marques">
-                  <option value="name">A → Z</option>
+                  <option value="name">A - Z</option>
                   <option value="devices">Plus de modèles</option>
                 </select>
               </div>
