@@ -1,8 +1,4 @@
-// EXTRAIT VERBATIM de MRA-ERP — src/types/global.d.ts
-//   lignes 290..457  : interfaces Finder*
-//   lignes 1077..1085 : contrat `window.api.finder`
-// Ne pas éditer à la main : régénérer depuis MRA-ERP/src/types/global.d.ts si l'original change.
-// Ajouts propres à cette copie : uniquement le bloc Window, à la fin.
+// Finder API types — v2 ajoute suggest, export, history, health
 
 interface FinderBrand {
   id: number
@@ -21,10 +17,7 @@ interface FinderDeviceSummary {
   brand_name: string
 }
 
-interface FinderAlias {
-  alias: string
-  lang: string
-}
+interface FinderAlias { alias: string; lang: string }
 
 interface FinderPartRow {
   id: number
@@ -57,12 +50,7 @@ interface FinderIcRow {
   board_area?: string
 }
 
-interface FinderMediaRow {
-  path: string
-  kind: string
-  license: string
-  credit: string
-}
+interface FinderMediaRow { path: string; kind: string; license: string; credit: string }
 
 interface FinderDevice extends FinderDeviceSummary {
   brand_id: number
@@ -142,16 +130,8 @@ interface FinderSearchItem {
   ic?: { id: number; ref: string; marking: string; manufacturer: string; function: string; family: string; package: string }
 }
 
-interface FinderListResult<T> {
-  total: number
-  page: number
-  pageSize: number
-  items: T[]
-}
-
-interface FinderSearchResult extends FinderListResult<FinderSearchItem> {
-  mode: 'empty' | 'tokens'
-}
+interface FinderListResult<T> { total: number; page: number; pageSize: number; items: T[] }
+interface FinderSearchResult extends FinderListResult<FinderSearchItem> { mode: 'empty' | 'tokens' }
 
 interface FinderStats {
   brands: number
@@ -173,20 +153,27 @@ interface FinderStats {
   devices_without_image: number
 }
 
-interface FinderApi {
-      stats: () => Promise<{ ok: boolean; stats?: FinderStats; error?: string }>
-      search: (params?: { q?: string; kind?: string; page?: number; pageSize?: number }) => Promise<{ ok: boolean; result?: FinderSearchResult; error?: string }>
-      brands: (params?: { q?: string; page?: number; pageSize?: number }) => Promise<{ ok: boolean; result?: FinderListResult<FinderBrand>; error?: string }>
-      brand: (params: { id?: number; slug?: string }) => Promise<{ ok: boolean; brand?: FinderBrand | null; error?: string }>
-      devices: (params?: { brandId?: number; q?: string; page?: number; pageSize?: number }) => Promise<{ ok: boolean; result?: FinderListResult<FinderDeviceSummary>; error?: string }>
-      device: (id: number) => Promise<{ ok: boolean; device?: FinderDevice | null; error?: string; code?: string }>
-      part: (id: number) => Promise<{ ok: boolean; part?: FinderPart | null; error?: string; code?: string }>
-      ic: (id: number) => Promise<{ ok: boolean; ic?: FinderIc | null; error?: string; code?: string }>
-      importParts: (params: { format: 'csv' | 'json'; content: string; fileName?: string; sourceLabel?: string; actor?: string }) => Promise<FinderImportReport>
+interface FinderHealthReport {
+  ok: boolean
+  checks: Array<{ name: string; ok: boolean; detail: string }>
+  at: string
 }
 
-interface Window {
-  api: {
-    finder: FinderApi
-  }
+interface FinderApi {
+  stats: () => Promise<{ ok: boolean; stats?: FinderStats; error?: string }>
+  search: (params?: { q?: string; kind?: string; page?: number; pageSize?: number; sort?: string }) => Promise<{ ok: boolean; result?: FinderSearchResult; error?: string }>
+  suggest: (params?: { q?: string; limit?: number }) => Promise<{ ok: boolean; items?: Array<{ kind: string; id: number; title: string; subtitle: string }>; error?: string }>
+  brands: (params?: { q?: string; page?: number; pageSize?: number; sort?: string }) => Promise<{ ok: boolean; result?: FinderListResult<FinderBrand>; error?: string }>
+  brand: (params: { id?: number; slug?: string }) => Promise<{ ok: boolean; brand?: FinderBrand | null; error?: string }>
+  devices: (params?: { brandId?: number; q?: string; page?: number; pageSize?: number; sort?: string }) => Promise<{ ok: boolean; result?: FinderListResult<FinderDeviceSummary>; error?: string }>
+  device: (id: number) => Promise<{ ok: boolean; device?: FinderDevice | null; error?: string; code?: string }>
+  part: (id: number) => Promise<{ ok: boolean; part?: FinderPart | null; error?: string; code?: string }>
+  ic: (id: number) => Promise<{ ok: boolean; ic?: FinderIc | null; error?: string; code?: string }>
+  importParts: (params: { format: 'csv' | 'json'; content: string; fileName?: string; sourceLabel?: string; actor?: string }) => Promise<FinderImportReport>
+  exportData: (params?: { kind?: string; format?: string }) => Promise<{ ok: boolean; data?: any; error?: string }>
+  importHistory: (params?: { limit?: number }) => Promise<{ ok: boolean; items?: any[]; total?: number; error?: string }>
+  healthCheck: () => Promise<FinderHealthReport & { error?: string }>
+  recentParts: (params?: { limit?: number }) => Promise<{ ok: boolean; items?: any[]; error?: string }>
 }
+
+interface Window { api: { finder: FinderApi } }

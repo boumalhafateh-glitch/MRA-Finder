@@ -1,18 +1,6 @@
 import { LanguageProvider, useTranslation, type Lang } from './contexts/LanguageContext'
 import FinderModule from './modules/finder/FinderModule'
 
-/**
- * Enveloppe de l'aperçu local.
- *
- * Elle n'ajoute aucune fonctionnalité à Finder : seulement un bandeau qui dit
- * d'où viennent les données affichées et un sélecteur de langue (FR/EN/AR) pour
- * vérifier la trilinguie hors de MRA-ERP. Le module ci-dessous est la copie
- * intégrale de `MRA-ERP/src/modules/finder/FinderModule.tsx`, inchangée.
- *
- * Le pont `window.api.finder` vient du preload Electron (voir electron/main.js) :
- * le moteur de recherche est celui de MRA-ERP, sur une base de développement
- * locale, jamais sur la base de production.
- */
 const LANGS: Array<{ id: Lang; label: string }> = [
   { id: 'fr', label: 'FR' },
   { id: 'en', label: 'EN' },
@@ -29,29 +17,29 @@ function Banner() {
         gap: 12,
         alignItems: 'center',
         justifyContent: 'space-between',
-        padding: '10px 16px',
-        borderBottom: '1px solid var(--cyan)',
-        background: 'var(--bg-primary)',
+        padding: '12px 20px',
+        borderBottom: '1px solid rgba(0,217,255,0.12)',
+        background: 'rgba(5,11,20,0.85)',
+        backdropFilter: 'blur(16px)',
         color: 'var(--text-dim)',
         fontFamily: 'var(--font-mono)',
-        fontSize: 12,
+        fontSize: 11.5,
         lineHeight: 1.5,
         position: 'sticky',
         top: 0,
         zIndex: 20,
       }}
     >
-      <div style={{ display: 'flex', gap: 10, alignItems: 'baseline', flexWrap: 'wrap' }}>
-        <strong style={{ color: 'var(--cyan)', letterSpacing: 1 }}>APERÇU LOCAL — MRA FINDER</strong>
-        <span>
-          moteur réel (electron/services/finder.js) · base de développement data/finder-dev.db ·
-          catalogue de départ : seed du dépôt MRA-ERP (306 modèles, 7 marques)
+      <div style={{ display: 'flex', gap: 10, alignItems: 'center', flexWrap: 'wrap' }}>
+        <span style={{
+          display: 'inline-flex', alignItems: 'center', gap: 6,
+          background: 'linear-gradient(135deg,#00d9ff,#00aeeF)', color: '#020a14',
+          fontWeight: 800, letterSpacing: 0.5, fontSize: 11, padding: '4px 10px', borderRadius: 999,
+        }}>
+          <span style={{ width: 6, height: 6, borderRadius: 50, background: '#020a14', display: 'inline-block' }} />
+          MRA FINDER v2
         </span>
-      </div>
-      <div style={{ marginTop: 4, maxWidth: '78ch' }}>
-        Aucune donnée de production : la base est créée localement à partir du seed public du
-        dépôt. Pièces, IC et compatibilités ne s’affichent que s’ils existent réellement dans
-        cette base (0 = rien n’a été importé, rien n’est simulé).
+        <span style={{ opacity: 0.85 }}>moteur réel · base locale · 306 modèles · recherche fuzzy + autocomplete · export &amp; santé</span>
       </div>
       <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
         {LANGS.map((item) => (
@@ -64,11 +52,13 @@ function Banner() {
               background: lang === item.id ? 'var(--cyan)' : 'transparent',
               color: lang === item.id ? 'var(--bg-primary)' : 'var(--text-dim)',
               border: '1px solid var(--cyan)',
-              borderRadius: 4,
+              borderRadius: 6,
               fontFamily: 'var(--font-mono)',
               fontSize: 11,
-              padding: '3px 8px',
+              fontWeight: 700,
+              padding: '4px 10px',
               cursor: 'pointer',
+              transition: 'all 0.15s ease',
             }}
           >
             {item.label}
