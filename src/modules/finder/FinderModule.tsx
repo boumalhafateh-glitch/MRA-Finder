@@ -119,7 +119,7 @@ export default function FinderModule() {
   const [favorites, setFavorites] = useState<Array<{ id: number; kind: string; title: string }>>(
     () => lsGet('finder:fav', [])
   )
-  const [tfOn, setTfOn] = useState<boolean>(() => lsGet('finder:tf', true))
+  const [tfOn, setTfOn] = useState<boolean>(true)
 
   const sequence = useRef<Record<Flow, number>>({ search: 0, device: 0, part: 0, ic: 0, brand: 0 })
   const lastId = useRef<Record<Flow, number | null>>({ search: null, device: null, part: null, ic: null, brand: null })
@@ -559,7 +559,7 @@ export default function FinderModule() {
   return (
     <div className={`finder-root${tfOn ? ' finder-root--transformers' : ''}`}>
       <header className="finder-head">
-        <div>
+        <div className="finder-head-center">
           <div className="finder-kicker">{t('finder.kicker')}</div>
           <h1 className="finder-title">{t('finder.title')}</h1>
           <p className="finder-sub">{t('finder.subtitle')}</p>
