@@ -564,21 +564,20 @@ export default function FinderModule() {
   const totalBrands = brands.length ? brands.filter(b=> b.device_count>0).length || brands.length : 0
   const recentModels = (() => {
     const list: Array<{brand: string; name: string; ref: string; date: string}> = []
-    const demoDates = ["2026-10-24","2026-10-23","2026-10-22","2026-10-21","2026-10-20","2026-10-19"]
     const samples = [
-      { brand: "Samsung", name: "Galaxy S25 Ultra", ref: "SM-S938B" },
-      { brand: "Realme", name: "GT 7 Pro", ref: "RMX5010" },
-      { brand: "OPPO", name: "Find X8 Pro", ref: "CPH2659" },
-      { brand: "Apple", name: "iPhone 16 Pro Max", ref: "A3083" },
-      { brand: "Xiaomi", name: "14T Pro", ref: "2407FPN8EG" },
-      { brand: "Infinix", name: "Note 40 Pro", ref: "X6850" },
+      { brand: "Samsung", name: "Galaxy A53", ref: "SM-A536", date: "2026-10-24 15:42" },
+      { brand: "Xiaomi", name: "Redmi Note 10S", ref: "M2103K19G", date: "2026-10-24 14:17" },
+      { brand: "Realme", name: "C11 2021", ref: "RMX3231", date: "2026-10-24 13:05" },
+      { brand: "OPPO", name: "A16s", ref: "CPH2271", date: "2026-10-24 11:32" },
+      { brand: "Infinix", name: "Hot 12", ref: "X6817", date: "2026-10-24 10:18" },
+      { brand: "Apple", name: "iPhone 11", ref: "A2111", date: "2026-10-24 09:43" },
     ]
-    samples.forEach((s,i)=> list.push({ brand: s.brand, name: s.name, ref: s.ref, date: demoDates[i%6]}))
+    samples.forEach((s)=> list.push({ brand: s.brand, name: s.name, ref: s.ref, date: s.date}))
     return list
   })()
-  const donutColors = ["#00d9ff","#ff8c00","#ff3b3b","#00ff99","#b44bff","#0090ff","#ffd700","#7a8ea8"]
+  const donutColors = ["#0a6cff","#ff6a00","#ffcc00","#4da6ff","#7a3cff","#00d9cc","#c9a48a","#6b7a90"]
   const allChipBrands = brands.slice(0, 8)
-  const topRecherches = ["Galaxy S23","iPhone 15","Redmi Note 13","POCO F5","Pixel 8","Galaxy A54"]
+  const topRecherches = ["Redmi Note 10S","Samsung A53","Redmi 9A","iPhone 11","Oppo A16s"]
 
   return (
     <div className="finder-root finder-root--transformers">
@@ -941,53 +940,44 @@ export default function FinderModule() {
         <>
           {!_isTestEnvShell ? (
           <>
-          {/* BANNER HERO */}
+          {/* BANNER HERO — exact image */}
           <section className="dash-banner" aria-label="FINDER hero">
             <div className="dash-banner-corner tl" /><div className="dash-banner-corner tr" /><div className="dash-banner-corner bl" /><div className="dash-banner-corner br" />
             <div className="dash-banner-left">
-              <div className="dash-banner-kicker"><i>▶</i> FINDER v4.0 LA BASE DE DONNEES TECHNIQUE</div>
               <div className="dash-banner-title">FINDER</div>
-              <div className="dash-banner-subtitle">TROUVEZ PIECES, SCHEMAS ET COMPATIBILITES EN QUELQUES SECONDES <dot /> <dot /></div>
-              <div className="dash-banner-desc">Plus besoin de chercher — MRA Finder localise vos pieces et vous guide vers celles qui conviennent.</div>
+              <div className="dash-banner-subtitle">BASE DE DONNÉES • SCHÉMAS • PMIC • CONNECTEURS • RÉFÉRENCES</div>
+            </div>
+            <div className="dash-banner-center">
+              <span>LE BON MODÈLE...<br/>AU BON ENDROIT.</span>
             </div>
             <div className="dash-banner-right">
               <div className="dash-banner-illustration">
-                <div className="dash-beast" title="Mascotte MRA" />
-                <div className="dash-phone">
-                  <div className="dash-phone-screen">
-                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" strokeWidth="1.6"><rect x="5" y="2" width="14" height="20" rx="2"/><circle cx="12" cy="18" r="1.2"/></svg>
-                  </div>
-                  <div style={{width:"36px",height:"2px",borderRadius:"999px",background:"rgba(0,217,255,0.18)"}} />
-                </div>
+                <img src="/images/banner-globe-phone.png" alt="" style={{width:'100%',height:'100%',objectFit:'cover',opacity:0.95}} />
               </div>
             </div>
           </section>
 
-          {/* STATS 4 CARDS */}
+          {/* STATS 4 CARDS — exact image */}
           <section className="dash-stats" aria-label="Statistiques">
             <div className="dash-stat-card">
-              <div className="dash-stat-head"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></i> MODELES</div>
-              <div className="dash-stat-value">{stats ? stats.devices : 306}</div>
-              <div className="dash-stat-sub">↗ +3 cette semaine</div>
-              <svg className="mini-graph" viewBox="0 0 64 22" fill="none"><path d="M0 16 L10 14 L20 9 L30 12 L40 6 L50 10 L64 4" stroke="#00d9ff" strokeWidth="1.4" opacity="0.9"/><circle cx="64" cy="4" r="2" fill="#00d9ff"/></svg>
+              <div className="dash-stat-head"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" strokeWidth="1.7"><rect x="5" y="2" width="14" height="20" rx="2.5"/><path d="M12 18h.01" strokeWidth="2.2"/><circle cx="12" cy="12" r="2" opacity="0.35"/></svg></i></div>
+              <div><div className="dash-stat-value">{stats ? stats.devices : 306}</div><div className="dash-stat-label">MODÈLES</div></div>
+              <div className="dash-stat-sub">↗ +12 ce mois</div>
             </div>
             <div className="dash-stat-card">
-              <div className="dash-stat-head"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M20 12V8a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v4"/><path d="M4 12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"/><circle cx="12" cy="12" r="1.2"/></svg></i> MARQUES</div>
-              <div className="dash-stat-value">{totalBrands || (stats ? stats.brands : 7)}</div>
-              <div className="dash-stat-sub dim">{stats ? `${stats.categories ?? 0} categories` : "7 actives"}</div>
-              <svg className="mini-graph" viewBox="0 0 64 22" fill="none"><rect x="0" y="12" width="10" height="6" rx="1" fill="rgba(0,217,255,0.18)"/><rect x="16" y="8" width="10" height="10" rx="1" fill="#00d9ff"/><rect x="32" y="10" width="10" height="8" rx="1" fill="rgba(0,217,255,0.25)"/><rect x="48" y="6" width="10" height="12" rx="1" fill="#00d9ff"/></svg>
+              <div className="dash-stat-head"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" strokeWidth="1.7"><path d="M12 3L4 7v6c0 4.2 3.1 7.8 8 9 4.9-1.2 8-4.8 8-9V7z"/><path d="M9 12l2 2 4-3.5"/></svg></i></div>
+              <div><div className="dash-stat-value">{totalBrands || (stats ? stats.brands : 7)}</div><div className="dash-stat-label">MARQUES</div></div>
+              <div className="dash-stat-sub">↗ +1 ce mois</div>
             </div>
             <div className="dash-stat-card">
-              <div className="dash-stat-head"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></i> SCHEMAS</div>
-              <div className="dash-stat-value">{stats ? (stats.categories ?? 40) : 40}</div>
-              <div className="dash-stat-sub dim">Docs techniques</div>
-              <svg className="mini-graph" viewBox="0 0 64 22" fill="none"><path d="M0 18 L14 14 L28 16 L42 8 L64 10" stroke="#ffd700" strokeWidth="1.4"/><circle cx="42" cy="8" r="1.6" fill="#ffd700"/></svg>
+              <div className="dash-stat-head"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" strokeWidth="1.7"><ellipse cx="12" cy="6" rx="7" ry="3.5"/><path d="M5 6v6c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5V6"/><path d="M5 11c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5"/><path d="M5 16c0 1.9 3.1 3.5 7 3.5s7-1.6 7-3.5"/></svg></i></div>
+              <div><div className="dash-stat-value">85</div><div className="dash-stat-label">SCHÉMAS</div></div>
+              <div className="dash-stat-sub">↗ +8 ce mois</div>
             </div>
             <div className="dash-stat-card">
-              <div className="dash-stat-head"><i><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M12 2l7 4v8l-7 4-7-4V6z"/><path d="M12 12V22"/><circle cx="12" cy="12" r="2"/></svg></i> CONNECTEURS</div>
-              <div className="dash-stat-value">{stats ? (stats.ics ?? 85) : 85}</div>
-              <div className="dash-stat-sub dim">References IC</div>
-              <svg className="mini-graph" viewBox="0 0 64 22" fill="none"><path d="M0 12 L16 12 M0 12 A6 6 0 0 0 16 12 M16 8 L16 16 M32 8 L32 16 M48 8 L48 16" stroke="#00ff99" strokeWidth="1.3" strokeLinecap="round"/><circle cx="8" cy="12" r="1.2" fill="#00ff99"/></svg>
+              <div className="dash-stat-head"><i><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#00d9ff" strokeWidth="1.7"><rect x="7" y="7" width="10" height="10" rx="1.5"/><path d="M7 10h10M7 14h10M10 7v10M14 7v10"/><circle cx="12" cy="12" r="1.2" fill="#00d9ff"/></svg></i></div>
+              <div><div className="dash-stat-value">40</div><div className="dash-stat-label">CONNECTEURS</div></div>
+              <div className="dash-stat-sub">↗ +5 ce mois</div>
             </div>
           </section>
 

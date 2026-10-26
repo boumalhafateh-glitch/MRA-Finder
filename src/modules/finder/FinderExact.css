@@ -297,3 +297,12 @@
 
 /* Footer */
 .mra-footer { height: 22px !important; min-height: 22px !important; background: #010a18 !important; border-top: 1px solid rgba(0,80,140,0.14) !important; font-size: 9px !important; padding: 0 10px !important; }
+
+/* Fix banner center text image exact */
+.dash-banner-center {
+  flex: 0 0 180px; display: flex; align-items: center; justify-content: center;
+  font-size: 10px; font-weight: 800; letter-spacing: 0.6px; color: #8ab4e8;
+  text-align: right; line-height: 1.35; text-transform: uppercase; padding-right: 10px;
+}
+.dash-stat-label { font-size: 10px; font-weight: 700; letter-spacing: 0.9px; color: #4a6a90; margin-top: 1px; }
+.dash-stat-card > div:nth-child(2) { display: flex; flex-direction: column; gap: 0; }
