@@ -692,6 +692,10 @@ const FINDER_BRAND_SEED = [
   'LG', 'Meizu', 'Motorola', 'Nokia', 'Nothing', 'nubia', 'OnePlus', 'OPPO',
   'Oukitel', 'POCO', 'Realme', 'Redmi', 'Samsung', 'Sharp', 'Sony', 'TCL',
   'Tecno', 'Ulefone', 'Vivo', 'Wiko', 'Xiaomi', 'ZTE',
+  // Ajout Badilk / WeFix : le plus possible (25 marques supplementaires)
+  'BlackBerry', 'Crosscall', 'LeEco', 'Microsoft', 'Umidigi', 'Black Shark', 'Cubot', 'Gionee', 'Hisense', 'Lava',
+  'Micromax', 'Neffos', 'Philips', 'Razer', 'Sonim', 'Vertu', 'Vodafone', 'Coolpad', 'Energizer', 'Essential',
+  'Gigaset', 'HMD', 'Inoi', 'QMobile', 'ZUK',
 ]
 
 function seedFinderBrands(db) {
