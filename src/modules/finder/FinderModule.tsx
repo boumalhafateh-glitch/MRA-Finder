@@ -221,8 +221,8 @@ export default function FinderModule() {
   ]
   const FALLBACK_STATS: FinderStats = {
     brands: 63, devices: 306, device_aliases: 278, categories: 86, parts: 98, part_refs: 98,
-    compatibilities: 441, compatibilities_by_status: { declared: 147, unverified: 294 }, ics: 0, ic_equivalences: 0, ic_devices: 0, media: 0,
-    import_batches: 1, last_import: null, devices_without_model_ref: 306, devices_without_year: 0, devices_without_image: 306
+    compatibilities: 441, compatibilities_by_status: { declared: 147, unverified: 294 }, ics: 42, ic_equivalences: 18, ic_devices: 147, media: 0,
+    import_batches: 2, last_import: null, devices_without_model_ref: 306, devices_without_year: 0, devices_without_image: 306
   }
 
 
