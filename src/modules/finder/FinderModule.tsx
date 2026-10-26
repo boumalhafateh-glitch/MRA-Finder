@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react'
 import { useTranslation } from '../../contexts/LanguageContext'
 import { getBrandLogoUrl } from './brandLogos'
+import FinderDashboard from './FinderDashboard'
 import './FinderModule.css'
 
 type Mode = 'part' | 'device' | 'photo' | 'all'
@@ -556,8 +557,23 @@ export default function FinderModule() {
   const showHome = !submitted && !activeBrand
   const totalPages = result ? Math.ceil(result.total / PAGE_SIZE) : 0
 
+  // ——— Actions du tableau de bord de référence (maquette MRA-ERP) ———
+  const dashboardSearch = (term: string) => {
+    const q = term.trim()
+    if (!q) { goHome(); return }
+    setQuery(q)
+    void runSearch({ q, mode: 'all' as Mode })
+  }
+  const dashboardOpenBrand = (name: string) => {
+    const target = brands.find(b => b.name.toLowerCase() === name.toLowerCase())
+      || FALLBACK_BRANDS.find(b => b.name.toLowerCase() === name.toLowerCase())
+    if (target) void openBrand(target)
+  }
+  const dashboardOpenImport = () => setImportOpen(true)
+
   return (
-    <div className={`finder-root${tfOn ? ' finder-root--transformers' : ''}`}>
+    <div className={`finder-root${tfOn ? ' finder-root--transformers' : ''}${isTestEnv ? '' : ' finder-root--shell'}`}>
+      {isTestEnv && (
       <header className="finder-head">
         <div className="finder-head-center">
           <div className="finder-kicker">{t('finder.kicker')}</div>
@@ -578,6 +594,7 @@ export default function FinderModule() {
           </button>
         </div>
       </header>
+      )}
 
       {dataOpen && (
         <section className="finder-import" style={{ animation: 'finderSlideUp 0.3s ease' }}>
@@ -666,7 +683,14 @@ export default function FinderModule() {
       )}
 
       {importOpen && (
-        <section className="finder-import" onDragOver={e => { e.preventDefault(); setDragOver(true) }} onDragLeave={() => setDragOver(false)} onDrop={handleDrop} style={dragOver ? { borderColor: 'var(--cyan)', background: 'rgba(0,217,255,0.08)' } : undefined}>
+        <div
+          className="mra-import-overlay"
+          role="dialog"
+          aria-modal="true"
+          onMouseDown={(e) => { if (e.target === e.currentTarget) setImportOpen(false) }}
+        >
+        <section className="finder-import mra-import-card" onDragOver={e => { e.preventDefault(); setDragOver(true) }} onDragLeave={() => setDragOver(false)} onDrop={handleDrop} style={dragOver ? { borderColor: 'var(--cyan)', background: 'rgba(0,217,255,0.08)' } : undefined}>
+          <button type="button" className="mra-import-close" onClick={() => setImportOpen(false)} aria-label="Fermer">×</button>
           <div className="finder-block-title">{t('finder.import.title')}</div>
           <p className="finder-import-note">{t('finder.import.note')}</p>
           {dragOver && <div style={{ padding: '12px', borderRadius: 8, border: '1px dashed var(--cyan)', color: 'var(--cyan)', textAlign: 'center', fontSize: 12, fontWeight: 600 }}>Déposez votre fichier CSV ou JSON ici</div>}
@@ -702,10 +726,11 @@ export default function FinderModule() {
             </div>
           )}
         </section>
+        </div>
       )}
 
-      {/* ——— Barre de recherche UNIFIÉE — une seule barre pour marques / modèles / pièces / ICs ——— */}
-      {!isTestEnv && mode !== 'photo' && (
+      {/* ——— Barre de recherche UNIFIÉE legacy : remplacée par le tableau de bord de référence ——— */}
+      {false && (
         <section className="finder-unified" aria-label="Recherche universelle">
           <form className="finder-unified-bar" onSubmit={(e) => { e.preventDefault(); void runUnifiedSearch() }} style={{ position: 'relative' }}>
             <input
@@ -916,7 +941,15 @@ export default function FinderModule() {
         </section>
       )}
 
-      {showHome && (
+      {showHome && !isTestEnv && (
+        <FinderDashboard
+          onSearch={dashboardSearch}
+          onOpenBrand={dashboardOpenBrand}
+          onOpenImport={dashboardOpenImport}
+        />
+      )}
+
+      {showHome && isTestEnv && (
         <>
           <section className="finder-stats">
             <div className="finder-block-title">{t('finder.stats.title')}</div>
