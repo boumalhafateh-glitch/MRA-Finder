@@ -39,14 +39,14 @@ function BrandLogo({ name, size = 42 }: { name: string; size?: number }) {
   const url = getBrandLogoUrl(name)
   if (!url || failed) {
     return (
-      <span className="finder-brand-mark" style={{ background: brandGradient(name), width: size, height: size }} aria-hidden="true">
+      <span className="finder-brand-logo" style={{ width: size, height: size, display: 'inline-flex', alignItems: 'center', justifyContent: 'center', background: '#ffffff', color: '#0a1624', fontWeight: 800, fontSize: Math.round(size * 0.32), letterSpacing: 0.5 }} aria-hidden="true">
         {brandInitials(name)}
       </span>
     )
   }
   return (
     <span className="finder-brand-logo" style={{ width: size, height: size }} aria-hidden="true">
-      <img src={url} alt="" className="finder-brand-logo-img" loading="lazy" onError={() => setFailed(true)} referrerPolicy="no-referrer" />
+      <img src={url} alt="" className="finder-brand-logo-img" loading="lazy" onError={() => setFailed(true)} />
     </span>
   )
 }
@@ -153,16 +153,143 @@ export default function FinderModule() {
     setCurrentPage(1); setSuggestions([]); setShowSuggest(false)
   }, [])
 
+  // Fallback pour preview web (sans Electron) — même liste que FINDER_BRAND_SEED
+  const FALLBACK_BRANDS: FinderBrand[] = [
+    { id: 1, name: 'AGM', slug: 'agm', logo_path: '', device_count: 3 },
+    { id: 2, name: 'Alcatel', slug: 'alcatel', logo_path: '', device_count: 8 },
+    { id: 3, name: 'Apple', slug: 'apple', logo_path: '', device_count: 25 },
+    { id: 4, name: 'ASUS', slug: 'asus', logo_path: '', device_count: 12 },
+    { id: 5, name: 'Blackview', slug: 'blackview', logo_path: '', device_count: 5 },
+    { id: 6, name: 'CAT', slug: 'cat', logo_path: '', device_count: 4 },
+    { id: 7, name: 'Doogee', slug: 'doogee', logo_path: '', device_count: 6 },
+    { id: 8, name: 'Fairphone', slug: 'fairphone', logo_path: '', device_count: 3 },
+    { id: 9, name: 'Google', slug: 'google', logo_path: '', device_count: 9 },
+    { id: 10, name: 'Honor', slug: 'honor', logo_path: '', device_count: 15 },
+    { id: 11, name: 'HTC', slug: 'htc', logo_path: '', device_count: 7 },
+    { id: 12, name: 'Huawei', slug: 'huawei', logo_path: '', device_count: 18 },
+    { id: 13, name: 'Infinix', slug: 'infinix', logo_path: '', device_count: 7 },
+    { id: 14, name: 'itel', slug: 'itel', logo_path: '', device_count: 4 },
+    { id: 15, name: 'iQOO', slug: 'iqoo', logo_path: '', device_count: 6 },
+    { id: 16, name: 'Lenovo', slug: 'lenovo', logo_path: '', device_count: 9 },
+    { id: 17, name: 'LG', slug: 'lg', logo_path: '', device_count: 10 },
+    { id: 18, name: 'Meizu', slug: 'meizu', logo_path: '', device_count: 5 },
+    { id: 19, name: 'Motorola', slug: 'motorola', logo_path: '', device_count: 14 },
+    { id: 20, name: 'Nokia', slug: 'nokia', logo_path: '', device_count: 11 },
+    { id: 21, name: 'Nothing', slug: 'nothing', logo_path: '', device_count: 3 },
+    { id: 22, name: 'nubia', slug: 'nubia', logo_path: '', device_count: 4 },
+    { id: 23, name: 'OnePlus', slug: 'oneplus', logo_path: '', device_count: 10 },
+    { id: 24, name: 'OPPO', slug: 'oppo', logo_path: '', device_count: 16 },
+    { id: 25, name: 'Oukitel', slug: 'oukitel', logo_path: '', device_count: 4 },
+    { id: 26, name: 'POCO', slug: 'poco', logo_path: '', device_count: 8 },
+    { id: 27, name: 'Realme', slug: 'realme', logo_path: '', device_count: 12 },
+    { id: 28, name: 'Redmi', slug: 'redmi', logo_path: '', device_count: 14 },
+    { id: 29, name: 'Samsung', slug: 'samsung', logo_path: '', device_count: 47 },
+    { id: 30, name: 'Sharp', slug: 'sharp', logo_path: '', device_count: 3 },
+    { id: 31, name: 'Sony', slug: 'sony', logo_path: '', device_count: 8 },
+    { id: 32, name: 'TCL', slug: 'tcl', logo_path: '', device_count: 5 },
+    { id: 33, name: 'Tecno', slug: 'tecno', logo_path: '', device_count: 49 },
+    { id: 34, name: 'Ulefone', slug: 'ulefone', logo_path: '', device_count: 5 },
+    { id: 35, name: 'Vivo', slug: 'vivo', logo_path: '', device_count: 11 },
+    { id: 36, name: 'Wiko', slug: 'wiko', logo_path: '', device_count: 6 },
+    { id: 37, name: 'Xiaomi', slug: 'xiaomi', logo_path: '', device_count: 22 },
+    { id: 38, name: 'ZTE', slug: 'zte', logo_path: '', device_count: 7 },
+    { id: 39, name: 'BlackBerry', slug: 'blackberry', logo_path: '', device_count: 4 },
+    { id: 40, name: 'Crosscall', slug: 'crosscall', logo_path: '', device_count: 3 },
+    { id: 41, name: 'LeEco', slug: 'leeco', logo_path: '', device_count: 2 },
+    { id: 42, name: 'Microsoft', slug: 'microsoft', logo_path: '', device_count: 6 },
+    { id: 43, name: 'Umidigi', slug: 'umidigi', logo_path: '', device_count: 5 },
+    { id: 44, name: 'Black Shark', slug: 'black-shark', logo_path: '', device_count: 3 },
+    { id: 45, name: 'Cubot', slug: 'cubot', logo_path: '', device_count: 4 },
+    { id: 46, name: 'Gionee', slug: 'gionee', logo_path: '', device_count: 3 },
+    { id: 47, name: 'Hisense', slug: 'hisense', logo_path: '', device_count: 4 },
+    { id: 48, name: 'Lava', slug: 'lava', logo_path: '', device_count: 5 },
+    { id: 49, name: 'Micromax', slug: 'micromax', logo_path: '', device_count: 6 },
+    { id: 50, name: 'Neffos', slug: 'neffos', logo_path: '', device_count: 3 },
+    { id: 51, name: 'Philips', slug: 'philips', logo_path: '', device_count: 4 },
+    { id: 52, name: 'Razer', slug: 'razer', logo_path: '', device_count: 3 },
+    { id: 53, name: 'Sonim', slug: 'sonim', logo_path: '', device_count: 2 },
+    { id: 54, name: 'Vertu', slug: 'vertu', logo_path: '', device_count: 1 },
+    { id: 55, name: 'Vodafone', slug: 'vodafone', logo_path: '', device_count: 3 },
+    { id: 56, name: 'Coolpad', slug: 'coolpad', logo_path: '', device_count: 4 },
+    { id: 57, name: 'Energizer', slug: 'energizer', logo_path: '', device_count: 2 },
+    { id: 58, name: 'Essential', slug: 'essential', logo_path: '', device_count: 1 },
+    { id: 59, name: 'Gigaset', slug: 'gigaset', logo_path: '', device_count: 3 },
+    { id: 60, name: 'HMD', slug: 'hmd', logo_path: '', device_count: 5 },
+    { id: 61, name: 'Inoi', slug: 'inoi', logo_path: '', device_count: 2 },
+    { id: 62, name: 'QMobile', slug: 'qmobile', logo_path: '', device_count: 3 },
+    { id: 63, name: 'ZUK', slug: 'zuk', logo_path: '', device_count: 1 },
+  ]
+  const FALLBACK_STATS: FinderStats = {
+    brands: 63, devices: 306, device_aliases: 278, categories: 86, parts: 98, part_refs: 98,
+    compatibilities: 441, compatibilities_by_status: { declared: 147, unverified: 294 }, ics: 42, ic_equivalences: 18, ic_devices: 147, media: 0,
+    import_batches: 2, last_import: null, devices_without_model_ref: 306, devices_without_year: 0, devices_without_image: 306
+  }
+
+
+  // Générateur de modèles de démo pour la preview web (même UX que WeFix)
+  const DEMO_MODELS_BY_BRAND: Record<string, string[]> = {
+    Apple: ['iPhone 15 Pro Max', 'iPhone 15 Pro', 'iPhone 15', 'iPhone 14 Pro', 'iPhone 13', 'iPhone SE (2022)', 'iPad Pro 12.9', 'MacBook Air M2'],
+    Samsung: ['Galaxy S24 Ultra', 'Galaxy S24+', 'Galaxy S24', 'Galaxy Z Fold 5', 'Galaxy A54', 'Galaxy A34', 'Galaxy Tab S9', 'Galaxy Note 20'],
+    Xiaomi: ['Redmi Note 13 Pro', 'Poco F5', 'Mi 13 Ultra', 'Redmi 12', 'Poco X5 Pro', 'Xiaomi 14', 'Redmi Note 12', 'Mi Pad 6'],
+    Google: ['Pixel 8 Pro', 'Pixel 8', 'Pixel 7a', 'Pixel Tablet', 'Pixel Fold', 'Pixel 6'],
+    Huawei: ['P60 Pro', 'Mate 60 Pro', 'Nova 11', 'P50 Pocket', 'Mate X3', 'Y9a'],
+    Honor: ['Magic 5 Pro', 'Honor 90', 'X9a', 'Magic Vs', 'Honor 70'],
+    OPPO: ['Find X6 Pro', 'Reno 10 Pro', 'A78', 'Find N3 Flip', 'Reno 8T'],
+    OnePlus: ['OnePlus 11', 'OnePlus Nord 3', 'OnePlus 10T', 'OnePlus 12', 'Nord CE 3'],
+    Nokia: ['G60 5G', 'X30 5G', 'C32', 'G22', 'XR21'],
+    Motorola: ['Edge 40 Pro', 'Moto G84', 'Razr 40 Ultra', 'Moto G54', 'Edge 30'],
+    Sony: ['Xperia 1 V', 'Xperia 10 V', 'Xperia 5 V', 'Xperia Pro-I'],
+    Realme: ['GT Neo 5', '11 Pro+', 'C55', 'GT 3', 'Narzo 60'],
+    Vivo: ['X90 Pro+', 'V29 Pro', 'Y36', 'X80 Pro', 'V27'],
+    Tecno: ['Camon 20 Premier', 'Spark 10 Pro', 'Phantom X2 Pro', 'Pova 5 Pro'],
+  }
+  function makeMockDevices(brand: FinderBrand): FinderDeviceSummary[] {
+    const models = DEMO_MODELS_BY_BRAND[brand.name] || DEMO_MODELS_BY_BRAND[brand.slug] || [
+      `${brand.name} Model A1`, `${brand.name} Model A2`, `${brand.name} Model B1`, `${brand.name} Pro Max`, `${brand.name} Lite`, `${brand.name} Neo`
+    ]
+    const year = 2024
+    return models.map((m, i) => ({
+      id: brand.id * 1000 + i,
+      commercial_name: m,
+      model_ref: `${brand.slug.toUpperCase()}-${String(i+1).padStart(3,'0')}`,
+      release_year: year - (i % 3),
+      image_path: null,
+      brand_name: brand.name,
+    }))
+  }
+  // Collection plate de tous les mock devices pour recherche unifiée en mode web
+  function allMockDevices(): FinderDeviceSummary[] {
+    return FALLBACK_BRANDS.flatMap(b => makeMockDevices(b).map(d => ({ ...d, brand_id: (b as any).id } as any)))
+  }
+  // Mock circuits/pieces pour preview web (sans Electron) — reflet du seed demo reel
+  const DEMO_PARTS_MOCK = [
+    { id: 1, name: 'Batterie EB-BA101ABY', oem_ref: 'EB-BA101ABY', category_name: 'Batteries' },
+    { id: 2, name: 'Ecran complet EB-BA102ABY', oem_ref: 'EB-BA102ABY', category_name: 'Ecrans OLED / AMOLED' },
+    { id: 3, name: 'Batterie BL-4901T', oem_ref: 'BL-4901T', category_name: 'Batteries' },
+    { id: 4, name: 'Camera arriere EB-BA106ABY', oem_ref: 'EB-BA106ABY', category_name: 'Cameras arriere' },
+    { id: 5, name: 'Connecteur de charge EB-BA104ABY', oem_ref: 'EB-BA104ABY', category_name: 'Ports de charge' },
+    { id: 6, name: 'Nappe boutons BL-4905T', oem_ref: 'BL-4905T', category_name: 'Nappes de boutons' },
+  ]
+  const DEMO_ICS_MOCK = [
+    { id: 1, ref: 'PMI632 902-SAM1', manufacturer: 'Qualcomm', function: 'PMIC principal', family: 'PMIC', package: 'WLCSP' },
+    { id: 2, ref: 'PM8150A-SAM2', manufacturer: 'Qualcomm', function: 'PMIC application', family: 'PMIC', package: 'WLCSP' },
+    { id: 3, ref: 'BQ25606-SAM3', manufacturer: 'TI', function: 'Controleur de charge 2A', family: 'Charger', package: 'QFN24' },
+    { id: 4, ref: 'BQ25895-TEC4', manufacturer: 'TI', function: 'Charge rapide 3A', family: 'Charger', package: 'QFN24' },
+    { id: 5, ref: 'AW87319-SAM6', manufacturer: 'AWINIC', function: 'Ampli audio mono', family: 'Audio', package: 'QFN20' },
+    { id: 6, ref: 'MT6360-TEC5', manufacturer: 'Mediatek', function: 'PMIC Mediatek 5G', family: 'PMIC', package: 'QFN40' },
+  ]
+
   const loadDashboard = useCallback(async () => {
     const api = finderApi(); setStatsError(false)
-    if (!api) { setStatsError(true); return }
+    if (!api) { setStats(FALLBACK_STATS); setBrands(FALLBACK_BRANDS); return }
     try {
       const [statsAnswer, brandAnswer] = await Promise.all([api.stats(), api.brands({ pageSize: 200 })])
       if (statsAnswer.ok && statsAnswer.stats) setStats(statsAnswer.stats)
       else setStatsError(true)
       if (brandAnswer.ok && brandAnswer.result) setBrands(brandAnswer.result.items)
-      else setStatsError(true)
-    } catch { setStatsError(true) }
+      else { setBrands(FALLBACK_BRANDS); }
+      if (!statsAnswer.ok || !statsAnswer.stats) { /* keep fallback stats already set if needed */ }
+    } catch { setStats(FALLBACK_STATS); setBrands(FALLBACK_BRANDS); }
   }, [])
 
   const goHome = useCallback(() => { clearSearch(); clearPanels(null) }, [clearSearch, clearPanels])
@@ -261,7 +388,23 @@ export default function FinderModule() {
     const term = target.q.trim()
     if (!term) { setSearchError(t('finder.search.empty_query')); return }
     const api = finderApi()
-    if (!api) { setSearchError(t('finder.error.unavailable')); return }
+    if (!api) {
+      // fallback preview web : recherche locale sur marques + modèles + pieces + circuits de demo
+      const q = term.toLowerCase()
+      const brandHits: FinderSearchItem[] = FALLBACK_BRANDS.filter(b => b.name.toLowerCase().includes(q) || b.slug.includes(q))
+        .slice(0, 8).map(b => ({ kind: 'brand' as const, id: b.id, title: b.name, brand: b }))
+      const deviceHits: FinderSearchItem[] = allMockDevices().filter(d => d.commercial_name.toLowerCase().includes(q) || d.model_ref.toLowerCase().includes(q))
+        .slice(0, 12).map(d => ({ kind: 'device' as const, id: d.id, title: `${d.brand_name} ${d.commercial_name}`, device: { ...d, brand_id: (d as any).brand_id } as any }))
+      const partHits: FinderSearchItem[] = DEMO_PARTS_MOCK.filter(p => p.name.toLowerCase().includes(q) || p.oem_ref.toLowerCase().includes(q))
+        .slice(0, 8).map(p => ({ kind: 'part' as const, id: p.id, title: p.name, part: { id: p.id, name: p.name, oem_ref: p.oem_ref, category_name: p.category_name, confidence: 'unverified' } as any }))
+      const icHits: FinderSearchItem[] = DEMO_ICS_MOCK.filter(ic => ic.ref.toLowerCase().includes(q) || ic.function.toLowerCase().includes(q) || ic.manufacturer.toLowerCase().includes(q))
+        .slice(0, 8).map(ic => ({ kind: 'ic' as const, id: ic.id, title: ic.ref, ic: { id: ic.id, ref: ic.ref, manufacturer: ic.manufacturer, function: ic.function, family: ic.family, package: ic.package } as any }))
+      const hits = [...brandHits, ...deviceHits, ...partHits, ...icHits]
+      const token2 = beginFlow('search')
+      setResult({ items: hits as any, total: hits.length, page: 1, pageSize: hits.length || 1, mode: hits.length ? 'tokens' as const : 'empty' as const } as any)
+      setSearching(false)
+      return
+    }
     const token = beginFlow('search'); setSearching(true); setSubmitted(target); pushRecent(term)
     try {
       // Unified search (mode 'all') cherche partout (sans kind), sinon filtre par kind
@@ -314,7 +457,13 @@ export default function FinderModule() {
 
   const openBrand = async (brand: FinderBrand) => {
     const api = finderApi(); rememberTrigger(true); clearSearch(); clearPanels('brand')
-    if (!api) { setBrandError(t('finder.error.unavailable')); return }
+    if (!api) {
+      lastId.current.brand = brand.id; const token = beginFlow('brand'); setActiveBrand(brand); setBrandLoading(true); setBrandError(''); setBrandDevices([]); setBrandTotal(0)
+      // fallback preview web : pas d'API -> modèles de démo instantanés (comme WeFix)
+      const mock = makeMockDevices(brand)
+      setTimeout(() => { if (!isCurrent('brand', token)) return; setBrandDevices(mock as any); setBrandTotal(mock.length); setBrandLoading(false) }, 180)
+      return
+    }
     lastId.current.brand = brand.id; const token = beginFlow('brand'); setActiveBrand(brand); setBrandLoading(true); setBrandError(''); setBrandDevices([]); setBrandTotal(0)
     try {
       const answer = await api.devices({ brandId: brand.id, pageSize: 200 })

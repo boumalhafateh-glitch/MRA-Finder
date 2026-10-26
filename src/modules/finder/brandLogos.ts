@@ -1,101 +1,94 @@
-// Mapping marque -> logo réel
-// Priorité : Simple Icons CDN (SVG clair) pour marques tech connues, sinon Clearbit (PNG)
-// Fallback : initiales si échec
+// Logos officiels — mix PNG/WEBP/JPG locaux (vrais logos) + SVG fallback
+// Tous les fichiers sont dans public/brand-logos/ (servis par Vite à /brand-logos/...)
 
-export const BRAND_DOMAINS: Record<string, string> = {
-  'AGM': 'agm-mobile.com',
-  'Alcatel': 'alcatelmobile.com',
-  'Apple': 'apple.com',
-  'ASUS': 'asus.com',
-  'Blackview': 'blackview.hk',
-  'CAT': 'catphones.com',
-  'Doogee': 'doogee.cc',
-  'Fairphone': 'fairphone.com',
-  'Google': 'google.com',
-  'Honor': 'hihonor.com',
-  'HTC': 'htc.com',
-  'Huawei': 'huawei.com',
-  'Infinix': 'infinixmobility.com',
-  'itel': 'itel-mobile.com',
-  'iQOO': 'iqoo.com',
-  'Lenovo': 'lenovo.com',
-  'LG': 'lg.com',
-  'Meizu': 'meizu.com',
-  'Motorola': 'motorola.com',
-  'Nokia': 'nokia.com',
-  'Nothing': 'nothing.tech',
-  'nubia': 'nubia.com',
-  'OnePlus': 'oneplus.com',
-  'OPPO': 'oppo.com',
-  'Oukitel': 'oukitel.com',
-  'POCO': 'po.co',
-  'Realme': 'realme.com',
-  'Redmi': 'mi.com',
-  'Samsung': 'samsung.com',
-  'Sharp': 'sharp.co.jp',
-  'Sony': 'sony.com',
-  'TCL': 'tcl.com',
-  'Tecno': 'tecno-mobile.com',
-  'Ulefone': 'ulefone.com',
-  'Vivo': 'vivo.com',
-  'Wiko': 'wikomobile.com',
-  'Xiaomi': 'xiaomi.com',
-  'ZTE': 'zte.com.cn',
+const BRAND_FILE: Record<string, string> = {
+  'AGM': 'agm.svg',
+  'Alcatel': 'alcatel.png',
+  'Apple': 'apple.png',
+  'ASUS': 'asus.svg', // PNG etait blanc sur blanc invisible, SVG noir lisible
+  'Blackview': 'blackview.svg',
+  'CAT': 'cat.svg',
+  'Doogee': 'doogee.svg',
+  'Fairphone': 'fairphone.png',
+  'Google': 'google.svg', // G multicolore officiel - SVG icon plus propre que Dota 2 PNG
+  'Honor': 'honor.svg', // PNG blanc invisible, SVG noir HONOR lisible
+  'HTC': 'htc.png',
+  'Huawei': 'huawei.png',
+  'Infinix': 'infinix.png',
+  'itel': 'itel.png',
+  'iQOO': 'iqoo.svg',
+  'Lenovo': 'lenovo.svg', // WEBP etait fond sombre, SVG rouge officiel mieux sur tuile blanche
+  'LG': 'lg.png',
+  'Meizu': 'meizu.svg',
+  'Motorola': 'motorola.png',
+  'Nokia': 'nokia.png',
+  'Nothing': 'nothing.png',
+  'nubia': 'nubia.svg',
+  'OnePlus': 'oneplus.png',
+  'OPPO': 'oppo.svg',
+  'Oukitel': 'oukitel.svg',
+  'POCO': 'poco.webp',
+  'Realme': 'realme.png',
+  'Redmi': 'redmi.png',
+  'Samsung': 'samsung.png',
+  'Sharp': 'sharp.jpg',
+  'Sony': 'sony.svg', // PNG etait Samsung mal labelle, SVG noir SONY propre
+  'TCL': 'tcl.png',
+  'Tecno': 'tecno.jpg',
+  'Ulefone': 'ulefone.jpg',
+  'Vivo': 'vivo.svg',
+  'Wiko': 'wiko.jpg',
+  'Xiaomi': 'xiaomi.png',
+  'ZTE': 'zte.png',
+  // Nouvelles marques Badilk / WeFix (25) - SVG generes automatiquement
+  'BlackBerry': 'blackberry.svg',
+  'Crosscall': 'crosscall.svg',
+  'LeEco': 'leeco.svg',
+  'Microsoft': 'microsoft.svg',
+  'Umidigi': 'umidigi.svg',
+  'Black Shark': 'black-shark.svg',
+  'Cubot': 'cubot.svg',
+  'Gionee': 'gionee.svg',
+  'Hisense': 'hisense.svg',
+  'Lava': 'lava.svg',
+  'Micromax': 'micromax.svg',
+  'Neffos': 'neffos.svg',
+  'Philips': 'philips.svg',
+  'Razer': 'razer.svg',
+  'Sonim': 'sonim.svg',
+  'Vertu': 'vertu.svg',
+  'Vodafone': 'vodafone.svg',
+  'Coolpad': 'coolpad.svg',
+  'Energizer': 'energizer.svg',
+  'Essential': 'essential.svg',
+  'Gigaset': 'gigaset.svg',
+  'HMD': 'hmd.svg',
+  'Inoi': 'inoi.svg',
+  'QMobile': 'qmobile.svg',
+  'ZUK': 'zuk.svg',
 }
 
-// Slugs Simple Icons (https://simpleicons.org) — seulement ceux confirmés présents
-export const SIMPLE_ICONS_SLUGS: Record<string, string> = {
-  'Apple': 'apple',
-  'ASUS': 'asus',
-  'Blackview': 'blackview', // fallback clearbit si 404
-  'CAT': 'caterpillar', // CAT -> caterpillar icon (proche)
-  'Google': 'google',
-  'Honor': 'honor',
-  'HTC': 'htc',
-  'Huawei': 'huawei',
-  'Infinix': 'infinix',
-  'Lenovo': 'lenovo',
-  'LG': 'lg',
-  'Motorola': 'motorola',
-  'Nokia': 'nokia',
-  'OnePlus': 'oneplus',
-  'OPPO': 'oppo',
-  'Realme': 'realme',
-  'Samsung': 'samsung',
-  'Sharp': 'sharp',
-  'Sony': 'sony',
-  'TCL': 'tcl',
-  'Vivo': 'vivo',
-  'Xiaomi': 'xiaomi',
-  'ZTE': 'zte',
-  // Marques avec logo approx via simple icons alternatifs
-  'POCO': 'poco',
-  'Nothing': 'nothing',
+function normalizeBrand(name: string): string {
+  return name.trim()
 }
 
-export function getBrandLogoUrl(brandName: string, prefer: 'auto' | 'simple' | 'clearbit' = 'auto'): string | null {
-  const name = brandName.trim()
+export function getBrandLogoUrl(brandName: string): string | null {
+  const name = normalizeBrand(brandName)
   if (!name) return null
-
-  // 1) Si on a un slug Simple Icons, on tente CDN simpleicons
-  if (prefer === 'simple' || (prefer === 'auto' && SIMPLE_ICONS_SLUGS[name])) {
-    const slug = SIMPLE_ICONS_SLUGS[name]
-    if (slug) return `https://cdn.simpleicons.org/${slug}/00D9FF` // cyan color for dark theme
+  if (BRAND_FILE[name]) return `/brand-logos/${BRAND_FILE[name]}`
+  const lower = name.toLowerCase()
+  for (const [k, v] of Object.entries(BRAND_FILE)) {
+    if (k.toLowerCase() === lower) return `/brand-logos/${v}`
   }
-
-  // 2) Clearbit fallback (PNG, fonctionne pour toutes les marques avec domaine)
-  const domain = BRAND_DOMAINS[name] || BRAND_DOMAINS[name.toLowerCase()] || BRAND_DOMAINS[name.toUpperCase()]
-  if (domain) {
-    return `https://logo.clearbit.com/${domain}?size=80`
-  }
-
-  // 3) Essai générique : logo.clearbit avec domaine deviné (marque + .com)
-  const guessed = name.toLowerCase().replace(/\s+/g, '') + '.com'
-  return `https://logo.clearbit.com/${guessed}?size=80`
+  const slug = lower.replace(/[^a-z0-9]/g, '')
+  if (slug) return `/brand-logos/${slug}.svg`
+  return null
 }
 
 export function getBrandFallbackIcon(name: string): string {
-  const words = name.trim().split(/\s+/)
+  const words = name.trim().split(/\s+/g)
   if (words.length === 1) return words[0].slice(0, 2).toUpperCase()
   return (words[0][0] + (words[1]?.[0] || '')).toUpperCase()
 }
+
+export const ALL_BRAND_SLUGS = Object.values(BRAND_FILE)

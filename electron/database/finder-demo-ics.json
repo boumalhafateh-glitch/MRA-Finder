@@ -1,0 +1,869 @@
+{
+  "count": 42,
+  "ic_equivalences": 18,
+  "ics": [
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A07",
+        "Galaxy A07 4G",
+        "Galaxy A07s"
+      ],
+      "ref": "PMI632 902-SAM1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A17",
+        "Galaxy A17 4G",
+        "Galaxy A18 4G",
+        "Galaxy A27"
+      ],
+      "ref": "PM8150A-SAM2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A37",
+        "Galaxy A56",
+        "Galaxy A57"
+      ],
+      "ref": "BQ25606-SAM3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy F16",
+        "Galaxy F17",
+        "Galaxy F36",
+        "Galaxy F56"
+      ],
+      "ref": "BQ25895-SAM4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy F70 Pro",
+        "Galaxy F70e",
+        "Galaxy M07"
+      ],
+      "ref": "MT6360-SAM5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy M17e",
+        "Galaxy M36",
+        "Galaxy M47",
+        "Galaxy M56"
+      ],
+      "ref": "AW87319-SAM6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 30S",
+        "Camon 40",
+        "Camon 40 Premier"
+      ],
+      "ref": "PMI632 902-TEC1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 40 Pro 4G",
+        "Camon 50 4G",
+        "Camon 50 Pro",
+        "Camon 50 Pro 4G"
+      ],
+      "ref": "PM8150A-TEC2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 50 Ultra",
+        "Camon Air",
+        "Camon Slim"
+      ],
+      "ref": "BQ25606-TEC3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Megapad",
+        "Megapad 11",
+        "Megapad Pro",
+        "Megapad SE"
+      ],
+      "ref": "BQ25895-TEC4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Phantom V Flip2",
+        "Phantom V Fold2",
+        "Pop 9"
+      ],
+      "ref": "MT6360-TEC5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pop X",
+        "Pop X 4G",
+        "Pova 6 Neo 5G",
+        "Pova 7"
+      ],
+      "ref": "AW87319-TEC6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "GT 20 Pro",
+        "GT 30",
+        "GT 30 Pro"
+      ],
+      "ref": "PMI632 902-INF1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 50",
+        "Hot 50 4G",
+        "Hot 50 Pro 4G",
+        "Hot 50i"
+      ],
+      "ref": "PM8150A-INF2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 60",
+        "Hot 60 Pro",
+        "Hot 60i"
+      ],
+      "ref": "BQ25606-INF3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 70",
+        "Hot 70 Pro",
+        "Note 40",
+        "Note 40 5G"
+      ],
+      "ref": "BQ25895-INF4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 40 Pro",
+        "Note 40 Pro 4G",
+        "Note 40S"
+      ],
+      "ref": "MT6360-INF5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 50 4G",
+        "Note 50 Pro 4G",
+        "Note 50s",
+        "Note 50x"
+      ],
+      "ref": "AW87319-INF6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "15 (India)",
+        "15 Lite",
+        "15 Pro"
+      ],
+      "ref": "PMI632 902-REA1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "16",
+        "16 Pro",
+        "16T",
+        "16x"
+      ],
+      "ref": "PM8150A-REA2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C100",
+        "C100 4G",
+        "C100i"
+      ],
+      "ref": "BQ25606-REA3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C71",
+        "C73",
+        "C83",
+        "C85"
+      ],
+      "ref": "BQ25895-REA4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C85 4G",
+        "C85 Pro",
+        "Narzo 100 Lite"
+      ],
+      "ref": "MT6360-REA5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "Narzo 80 Lite",
+        "Narzo 80 Lite 5G",
+        "Narzo 90",
+        "Narzo 90X"
+      ],
+      "ref": "AW87319-REA6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6",
+        "A6 4G",
+        "A6c"
+      ],
+      "ref": "PMI632 902-OPP1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6s",
+        "A6s 4G",
+        "A6s Pro",
+        "A6t"
+      ],
+      "ref": "PM8150A-OPP2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6t 4G",
+        "A6t Pro 4G",
+        "A7 Pro"
+      ],
+      "ref": "BQ25606-OPP3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "F33",
+        "F33 Pro",
+        "Find N6",
+        "Find X10"
+      ],
+      "ref": "BQ25895-OPP4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Find X10 E",
+        "Find X10 Pro Max",
+        "Find X9 Ultra"
+      ],
+      "ref": "MT6360-OPP5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Find X9s Pro",
+        "K14",
+        "K14 Lite",
+        "K14x"
+      ],
+      "ref": "AW87319-OPP6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "17 Max",
+        "17T",
+        "17T Pro"
+      ],
+      "ref": "PMI632 902-XIA1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "18 Pro",
+        "18 Pro Max",
+        "Black Shark Pad SE",
+        "Pad 9"
+      ],
+      "ref": "PM8150A-XIA2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Pad 9 Pro",
+        "Pad 9 Pro Max",
+        "Poco C81"
+      ],
+      "ref": "BQ25606-XIA3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco C81x",
+        "Poco C95 Pro",
+        "Poco F9 Pro",
+        "Poco F9 Ultra"
+      ],
+      "ref": "BQ25895-XIA4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco M8 Power",
+        "Poco M8s",
+        "Poco M8x"
+      ],
+      "ref": "MT6360-XIA5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco X8",
+        "Poco X8 Power",
+        "Poco X8 Pro Max",
+        "Redmi 15a"
+      ],
+      "ref": "AW87319-XIA6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch SE 3",
+        "Watch Series 10",
+        "Watch Series 10 Aluminum"
+      ],
+      "ref": "PMI632 902-APL1",
+      "marking": "PMI632",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC principal",
+      "package": "WLCSP",
+      "pins": 96,
+      "voltage": "3.3-4.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 11 Aluminum",
+        "Watch Series 12",
+        "Watch Series 12 Aluminum",
+        "Watch Series 8"
+      ],
+      "ref": "PM8150A-APL2",
+      "marking": "PM8150",
+      "manufacturer": "Qualcomm",
+      "family": "PMIC",
+      "function": "PMIC application",
+      "package": "WLCSP",
+      "pins": 128,
+      "voltage": "3.0-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 9",
+        "Watch Series 9 Aluminum",
+        "Watch Ultra"
+      ],
+      "ref": "BQ25606-APL3",
+      "marking": "BQ25606",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Controleur de charge 2A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-6.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Ultra 3",
+        "Watch Ultra 4",
+        "iPhone 14",
+        "iPhone 14 Plus"
+      ],
+      "ref": "BQ25895-APL4",
+      "marking": "BQ25895",
+      "manufacturer": "TI",
+      "family": "Charger",
+      "function": "Charge rapide 3A",
+      "package": "QFN24",
+      "pins": 24,
+      "voltage": "3.9-14V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 14 Pro",
+        "iPhone 14 Pro Max",
+        "iPhone 15"
+      ],
+      "ref": "MT6360-APL5",
+      "marking": "MT6360",
+      "manufacturer": "Mediatek",
+      "family": "PMIC",
+      "function": "PMIC Mediatek 5G",
+      "package": "QFN40",
+      "pins": 40,
+      "voltage": "3.4-4.4V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 15 Pro",
+        "iPhone 15 Pro Max",
+        "iPhone 16",
+        "iPhone 16 Plus"
+      ],
+      "ref": "AW87319-APL6",
+      "marking": "87319",
+      "manufacturer": "AWINIC",
+      "family": "Audio",
+      "function": "Ampli audio mono",
+      "package": "QFN20",
+      "pins": 20,
+      "voltage": "2.5-5.5V",
+      "notes": "Donnee demo IC - a verifier en atelier (non verifie)"
+    }
+  ],
+  "equivalences": [
+    {
+      "ic_a_ref": "PMI632 902-SAM1",
+      "ic_b_ref": "PMI632 902-TEC1",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC principal - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "PMI632 902-INF1",
+      "ic_b_ref": "PMI632 902-REA1",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC principal - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "PMI632 902-OPP1",
+      "ic_b_ref": "PMI632 902-XIA1",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC principal - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "PM8150A-SAM2",
+      "ic_b_ref": "PM8150A-TEC2",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC application - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "PM8150A-INF2",
+      "ic_b_ref": "PM8150A-REA2",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC application - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "PM8150A-OPP2",
+      "ic_b_ref": "PM8150A-XIA2",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC application - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25606-SAM3",
+      "ic_b_ref": "BQ25606-TEC3",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Controleur de charge 2A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25606-INF3",
+      "ic_b_ref": "BQ25606-REA3",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Controleur de charge 2A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25606-OPP3",
+      "ic_b_ref": "BQ25606-XIA3",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Controleur de charge 2A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25895-SAM4",
+      "ic_b_ref": "BQ25895-TEC4",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Charge rapide 3A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25895-INF4",
+      "ic_b_ref": "BQ25895-REA4",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Charge rapide 3A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "BQ25895-OPP4",
+      "ic_b_ref": "BQ25895-XIA4",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Charge rapide 3A - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "MT6360-SAM5",
+      "ic_b_ref": "MT6360-TEC5",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC Mediatek 5G - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "MT6360-INF5",
+      "ic_b_ref": "MT6360-REA5",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC Mediatek 5G - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "MT6360-OPP5",
+      "ic_b_ref": "MT6360-XIA5",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction PMIC Mediatek 5G - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "AW87319-SAM6",
+      "ic_b_ref": "AW87319-TEC6",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Ampli audio mono - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "AW87319-INF6",
+      "ic_b_ref": "AW87319-REA6",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Ampli audio mono - demo Badilk-like"
+    },
+    {
+      "ic_a_ref": "AW87319-OPP6",
+      "ic_b_ref": "AW87319-XIA6",
+      "kind": "pin_to_pin",
+      "restrictions": "Compatibilite demo non verifiee - verifier brochage",
+      "evidence": "Meme fonction Ampli audio mono - demo Badilk-like"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 40" width="100" height="40" role="img">
+  <rect width="100" height="40" rx="8" fill="white"/>
+  <text x="50" y="26" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="800" letter-spacing="1.2" fill="#1428A0">SAMSUNG</text>
+  <rect x="10" y="30" width="80" height="2" rx="1" fill="#1428A0" opacity="0.15"/>
+</svg>

@@ -1,0 +1,1428 @@
+{
+  "count": 98,
+  "total_compat_pairs": 441,
+  "total_links": 343,
+  "parts": [
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A07",
+        "Galaxy A07 4G",
+        "Galaxy A07s"
+      ],
+      "part_name": "Batterie EB-BA101ABY",
+      "oem_ref": "EB-BA101ABY",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A08 4G",
+        "Galaxy A17",
+        "Galaxy A17 4G",
+        "Galaxy A18 4G"
+      ],
+      "part_name": "Ecran complet EB-BA102ABY",
+      "oem_ref": "EB-BA102ABY",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A18 4G",
+        "Galaxy A27",
+        "Galaxy A37"
+      ],
+      "part_name": "Vitre tactile EB-BA103ABY",
+      "oem_ref": "EB-BA103ABY",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy A56",
+        "Galaxy A57",
+        "Galaxy F07",
+        "Galaxy F16"
+      ],
+      "part_name": "Connecteur de charge EB-BA104ABY",
+      "oem_ref": "EB-BA104ABY",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy F16",
+        "Galaxy F17",
+        "Galaxy F36"
+      ],
+      "part_name": "Carte fille USB EB-BA105ABY",
+      "oem_ref": "EB-BA105ABY",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy F56",
+        "Galaxy F70 Pro",
+        "Galaxy F70e",
+        "Galaxy M07"
+      ],
+      "part_name": "Camera arriere EB-BA106ABY",
+      "oem_ref": "EB-BA106ABY",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy M07",
+        "Galaxy M17",
+        "Galaxy M17e"
+      ],
+      "part_name": "Camera avant EB-BA107ABY",
+      "oem_ref": "EB-BA107ABY",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy M36",
+        "Galaxy M47",
+        "Galaxy M56",
+        "Galaxy S25 Edge"
+      ],
+      "part_name": "Haut-parleur EB-BA108ABY",
+      "oem_ref": "EB-BA108ABY",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy S25 Edge",
+        "Galaxy S25 FE",
+        "Galaxy S26"
+      ],
+      "part_name": "Ecouteur interne EB-BA109ABY",
+      "oem_ref": "EB-BA109ABY",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy S26 FE",
+        "Galaxy S26 Ultra",
+        "Galaxy Tab A11",
+        "Galaxy Tab Active5 Pro"
+      ],
+      "part_name": "Microphone EB-BA110ABY",
+      "oem_ref": "EB-BA110ABY",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy Tab Active5 Pro",
+        "Galaxy Tab S10 FE",
+        "Galaxy Tab S10 Lite"
+      ],
+      "part_name": "Tiroir SIM EB-BA111ABY",
+      "oem_ref": "EB-BA111ABY",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy Tab S11",
+        "Galaxy Tab S11 Ultra",
+        "Galaxy Watch Ultra2",
+        "Galaxy Watch8"
+      ],
+      "part_name": "Coque arriere EB-BA112ABY",
+      "oem_ref": "EB-BA112ABY",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy Watch8",
+        "Galaxy Watch8 Classic",
+        "Galaxy Watch9"
+      ],
+      "part_name": "Nappe boutons EB-BA113ABY",
+      "oem_ref": "EB-BA113ABY",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Samsung",
+      "models": [
+        "Galaxy XCover7 Pro",
+        "Galaxy Z Flip7",
+        "Galaxy Z Flip7 FE",
+        "Galaxy Z Flip8"
+      ],
+      "part_name": "Nappe intercarte EB-BA114ABY",
+      "oem_ref": "EB-BA114ABY",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 30S",
+        "Camon 40",
+        "Camon 40 Premier"
+      ],
+      "part_name": "Batterie BL-4901T",
+      "oem_ref": "BL-4901T",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 40 Pro",
+        "Camon 40 Pro 4G",
+        "Camon 50 4G",
+        "Camon 50 Pro"
+      ],
+      "part_name": "Ecran complet BL-4902T",
+      "oem_ref": "BL-4902T",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon 50 Pro",
+        "Camon 50 Pro 4G",
+        "Camon 50 Ultra"
+      ],
+      "part_name": "Vitre tactile BL-4903T",
+      "oem_ref": "BL-4903T",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Camon Air",
+        "Camon Slim",
+        "Camon Slim 4G",
+        "Megapad"
+      ],
+      "part_name": "Connecteur de charge BL-4904T",
+      "oem_ref": "BL-4904T",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Megapad",
+        "Megapad 11",
+        "Megapad Pro"
+      ],
+      "part_name": "Carte fille USB BL-4905T",
+      "oem_ref": "BL-4905T",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Megapad SE",
+        "Phantom V Flip2",
+        "Phantom V Fold2",
+        "Pop 9"
+      ],
+      "part_name": "Camera arriere BL-4906T",
+      "oem_ref": "BL-4906T",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pop 9",
+        "Pop 9 4G",
+        "Pop X"
+      ],
+      "part_name": "Camera avant BL-4907T",
+      "oem_ref": "BL-4907T",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pop X 4G",
+        "Pova 6 Neo 5G",
+        "Pova 7",
+        "Pova 7 4G"
+      ],
+      "part_name": "Haut-parleur BL-4908T",
+      "oem_ref": "BL-4908T",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pova 7 4G",
+        "Pova 7 Pro",
+        "Pova 7 Ultra"
+      ],
+      "part_name": "Ecouteur interne BL-4909T",
+      "oem_ref": "BL-4909T",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pova 8",
+        "Pova 8 Pro",
+        "Pova Curve",
+        "Pova Curve 2"
+      ],
+      "part_name": "Microphone BL-4910T",
+      "oem_ref": "BL-4910T",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Pova Curve 2",
+        "Pova Slim",
+        "Spark 30"
+      ],
+      "part_name": "Tiroir SIM BL-4911T",
+      "oem_ref": "BL-4911T",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Spark 30 5G",
+        "Spark 30 Pro",
+        "Spark 30C 5G",
+        "Spark 40"
+      ],
+      "part_name": "Coque arriere BL-4912T",
+      "oem_ref": "BL-4912T",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Spark 40",
+        "Spark 40 4G",
+        "Spark 40 Pro"
+      ],
+      "part_name": "Nappe boutons BL-4913T",
+      "oem_ref": "BL-4913T",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Tecno",
+      "models": [
+        "Spark 40C",
+        "Spark 50",
+        "Spark 50 4G",
+        "Spark 50 Pro"
+      ],
+      "part_name": "Nappe intercarte BL-4914T",
+      "oem_ref": "BL-4914T",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "GT 20 Pro",
+        "GT 30",
+        "GT 30 Pro"
+      ],
+      "part_name": "Batterie BL-5801FT",
+      "oem_ref": "BL-5801FT",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "GT 50 Pro",
+        "Hot 50",
+        "Hot 50 4G",
+        "Hot 50 Pro 4G"
+      ],
+      "part_name": "Ecran complet BL-5802FT",
+      "oem_ref": "BL-5802FT",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 50 Pro 4G",
+        "Hot 50i",
+        "Hot 60"
+      ],
+      "part_name": "Vitre tactile BL-5803FT",
+      "oem_ref": "BL-5803FT",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 60 Pro",
+        "Hot 60i",
+        "Hot 60i 4G",
+        "Hot 70"
+      ],
+      "part_name": "Connecteur de charge BL-5804FT",
+      "oem_ref": "BL-5804FT",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Hot 70",
+        "Hot 70 Pro",
+        "Note 40"
+      ],
+      "part_name": "Carte fille USB BL-5805FT",
+      "oem_ref": "BL-5805FT",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 40 5G",
+        "Note 40 Pro",
+        "Note 40 Pro 4G",
+        "Note 40S"
+      ],
+      "part_name": "Camera arriere BL-5806FT",
+      "oem_ref": "BL-5806FT",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 40S",
+        "Note 40X 5G",
+        "Note 50 4G"
+      ],
+      "part_name": "Camera avant BL-5807FT",
+      "oem_ref": "BL-5807FT",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 50 Pro 4G",
+        "Note 50s",
+        "Note 50x",
+        "Note 60"
+      ],
+      "part_name": "Haut-parleur BL-5808FT",
+      "oem_ref": "BL-5808FT",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note 60",
+        "Note 60 Pro",
+        "Note 60 Ultra"
+      ],
+      "part_name": "Ecouteur interne BL-5809FT",
+      "oem_ref": "BL-5809FT",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Note Edge",
+        "Smart 10",
+        "Smart 10 HD",
+        "Smart 10 Plus"
+      ],
+      "part_name": "Microphone BL-5810FT",
+      "oem_ref": "BL-5810FT",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Smart 10 Plus",
+        "Smart 20",
+        "Smart 8 HD"
+      ],
+      "part_name": "Tiroir SIM BL-5811FT",
+      "oem_ref": "BL-5811FT",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Smart 8 Plus",
+        "Smart 8 Pro",
+        "Smart 9",
+        "Smart 9 HD"
+      ],
+      "part_name": "Coque arriere BL-5812FT",
+      "oem_ref": "BL-5812FT",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Smart 9 HD",
+        "Xpad",
+        "Xpad 20"
+      ],
+      "part_name": "Nappe boutons BL-5813FT",
+      "oem_ref": "BL-5813FT",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Infinix",
+      "models": [
+        "Xpad 20 Pro",
+        "Xpad 30 Pro",
+        "Xpad GT",
+        "Zero 40"
+      ],
+      "part_name": "Nappe intercarte BL-5814FT",
+      "oem_ref": "BL-5814FT",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "15 (India)",
+        "15 Lite",
+        "15 Pro"
+      ],
+      "part_name": "Batterie BLP901",
+      "oem_ref": "BLP901",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "15T",
+        "16",
+        "16 Pro",
+        "16T"
+      ],
+      "part_name": "Ecran complet BLP902",
+      "oem_ref": "BLP902",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "16T",
+        "16x",
+        "C100"
+      ],
+      "part_name": "Vitre tactile BLP903",
+      "oem_ref": "BLP903",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C100 4G",
+        "C100i",
+        "C100x",
+        "C71"
+      ],
+      "part_name": "Connecteur de charge BLP904",
+      "oem_ref": "BLP904",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C71",
+        "C73",
+        "C83"
+      ],
+      "part_name": "Carte fille USB BLP905",
+      "oem_ref": "BLP905",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "C85",
+        "C85 4G",
+        "C85 Pro",
+        "Narzo 100 Lite"
+      ],
+      "part_name": "Camera arriere BLP906",
+      "oem_ref": "BLP906",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "Narzo 100 Lite",
+        "Narzo 100x",
+        "Narzo 80 Lite"
+      ],
+      "part_name": "Camera avant BLP907",
+      "oem_ref": "BLP907",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "Narzo 80 Lite 5G",
+        "Narzo 90",
+        "Narzo 90X",
+        "Narzo Power"
+      ],
+      "part_name": "Haut-parleur BLP908",
+      "oem_ref": "BLP908",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "Narzo Power",
+        "Neo7 Turbo",
+        "Neo8"
+      ],
+      "part_name": "Ecouteur interne BLP909",
+      "oem_ref": "BLP909",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "Note 70",
+        "Note 70T",
+        "Note 80",
+        "P3 Lite"
+      ],
+      "part_name": "Microphone BLP910",
+      "oem_ref": "BLP910",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "P3 Lite",
+        "P3 Lite 4G",
+        "P4"
+      ],
+      "part_name": "Tiroir SIM BLP911",
+      "oem_ref": "BLP911",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "P4 Lite",
+        "P4 Lite 4G",
+        "P4 Power",
+        "P4 Pro"
+      ],
+      "part_name": "Coque arriere BLP912",
+      "oem_ref": "BLP912",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "P4 Pro",
+        "P4R",
+        "P4s"
+      ],
+      "part_name": "Nappe boutons BLP913",
+      "oem_ref": "BLP913",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Realme",
+      "models": [
+        "P4x",
+        "P4x 4G",
+        "Pad 3",
+        "Watch 5"
+      ],
+      "part_name": "Nappe intercarte BLP914",
+      "oem_ref": "BLP914",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6",
+        "A6 4G",
+        "A6c"
+      ],
+      "part_name": "Batterie BLP801X",
+      "oem_ref": "BLP801X",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6k",
+        "A6s",
+        "A6s 4G",
+        "A6s Pro"
+      ],
+      "part_name": "Ecran complet BLP802X",
+      "oem_ref": "BLP802X",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6s Pro",
+        "A6t",
+        "A6t 4G"
+      ],
+      "part_name": "Vitre tactile BLP803X",
+      "oem_ref": "BLP803X",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6t Pro 4G",
+        "A7 Pro",
+        "A7 Pro Max",
+        "F33"
+      ],
+      "part_name": "Connecteur de charge BLP804X",
+      "oem_ref": "BLP804X",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "F33",
+        "F33 Pro",
+        "Find N6"
+      ],
+      "part_name": "Carte fille USB BLP805X",
+      "oem_ref": "BLP805X",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Find X10",
+        "Find X10 E",
+        "Find X10 Pro Max",
+        "Find X9 Ultra"
+      ],
+      "part_name": "Camera arriere BLP806X",
+      "oem_ref": "BLP806X",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Find X9 Ultra",
+        "Find X9s",
+        "Find X9s Pro"
+      ],
+      "part_name": "Camera avant BLP807X",
+      "oem_ref": "BLP807X",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "K14",
+        "K14 Lite",
+        "K14x",
+        "K15"
+      ],
+      "part_name": "Haut-parleur BLP808X",
+      "oem_ref": "BLP808X",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "K15",
+        "K15 Pro",
+        "Pad 5 Pro"
+      ],
+      "part_name": "Ecouteur interne BLP809X",
+      "oem_ref": "BLP809X",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Pad 6",
+        "Pad Mini",
+        "Reno15 FS",
+        "Reno15 Pro Max"
+      ],
+      "part_name": "Microphone BLP810X",
+      "oem_ref": "BLP810X",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Reno15 Pro Max",
+        "Reno15 Pro Mini",
+        "Reno16"
+      ],
+      "part_name": "Tiroir SIM BLP811X",
+      "oem_ref": "BLP811X",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Reno16 F",
+        "Reno16 FS",
+        "Reno16 Pro",
+        "Reno16c"
+      ],
+      "part_name": "Coque arriere BLP812X",
+      "oem_ref": "BLP812X",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "Reno16c",
+        "Watch X3",
+        "Watch X3 Mini"
+      ],
+      "part_name": "Nappe boutons BLP813X",
+      "oem_ref": "BLP813X",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Oppo",
+      "models": [
+        "A6",
+        "A6 4G",
+        "A6c",
+        "A6k"
+      ],
+      "part_name": "Nappe intercarte BLP814X",
+      "oem_ref": "BLP814X",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "17 Max",
+        "17T",
+        "17T Pro"
+      ],
+      "part_name": "Batterie BN501",
+      "oem_ref": "BN501",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "18 Fold",
+        "18 Pro",
+        "18 Pro Max",
+        "Black Shark Pad SE"
+      ],
+      "part_name": "Ecran complet BN502",
+      "oem_ref": "BN502",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Black Shark Pad SE",
+        "Pad 9",
+        "Pad 9 Pro"
+      ],
+      "part_name": "Vitre tactile BN503",
+      "oem_ref": "BN503",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Pad 9 Pro Max",
+        "Poco C81",
+        "Poco C81 Pro",
+        "Poco C81x"
+      ],
+      "part_name": "Connecteur de charge BN504",
+      "oem_ref": "BN504",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco C81x",
+        "Poco C95 Pro",
+        "Poco F9 Pro"
+      ],
+      "part_name": "Carte fille USB BN505",
+      "oem_ref": "BN505",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco F9 Ultra",
+        "Poco M8 Power",
+        "Poco M8s",
+        "Poco M8x"
+      ],
+      "part_name": "Camera arriere BN506",
+      "oem_ref": "BN506",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco M8x",
+        "Poco Pad C1",
+        "Poco X8"
+      ],
+      "part_name": "Camera avant BN507",
+      "oem_ref": "BN507",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Poco X8 Power",
+        "Poco X8 Pro Max",
+        "Redmi 15a",
+        "Redmi 17"
+      ],
+      "part_name": "Haut-parleur BN508",
+      "oem_ref": "BN508",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi 17",
+        "Redmi 17 4G",
+        "Redmi 17C"
+      ],
+      "part_name": "Ecouteur interne BN509",
+      "oem_ref": "BN509",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi A7",
+        "Redmi A7 Pro",
+        "Redmi A7 Pro 4G",
+        "Redmi K Pad 2"
+      ],
+      "part_name": "Microphone BN510",
+      "oem_ref": "BN510",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi K Pad 2",
+        "Redmi K100 Pro",
+        "Redmi K100 Pro Max"
+      ],
+      "part_name": "Tiroir SIM BN511",
+      "oem_ref": "BN511",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi K90 Max",
+        "Redmi K90 Ultra",
+        "Redmi M100",
+        "Redmi Note 15 Special"
+      ],
+      "part_name": "Coque arriere BN512",
+      "oem_ref": "BN512",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi Note 15 Special",
+        "Redmi Note 17",
+        "Redmi Note 17 4G"
+      ],
+      "part_name": "Nappe boutons BN513",
+      "oem_ref": "BN513",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Xiaomi",
+      "models": [
+        "Redmi Note 17 Pro",
+        "Redmi Note 17 Pro Max",
+        "Redmi Pad 2 9.7",
+        "Redmi R70"
+      ],
+      "part_name": "Nappe intercarte BN514",
+      "oem_ref": "BN514",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch SE 3",
+        "Watch Series 10",
+        "Watch Series 10 Aluminum"
+      ],
+      "part_name": "Batterie 616-00001",
+      "oem_ref": "616-00001",
+      "category": "battery",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 11",
+        "Watch Series 11 Aluminum",
+        "Watch Series 12",
+        "Watch Series 12 Aluminum"
+      ],
+      "part_name": "Ecran complet 616-00002",
+      "oem_ref": "616-00002",
+      "category": "display-assembly",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 12 Aluminum",
+        "Watch Series 8",
+        "Watch Series 9"
+      ],
+      "part_name": "Vitre tactile 616-00003",
+      "oem_ref": "616-00003",
+      "category": "display-glass",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 9 Aluminum",
+        "Watch Ultra",
+        "Watch Ultra 2",
+        "Watch Ultra 3"
+      ],
+      "part_name": "Connecteur de charge 616-00004",
+      "oem_ref": "616-00004",
+      "category": "charging-port",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Ultra 3",
+        "Watch Ultra 4",
+        "iPhone 14"
+      ],
+      "part_name": "Carte fille USB 616-00005",
+      "oem_ref": "616-00005",
+      "category": "charging-board",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 14 Plus",
+        "iPhone 14 Pro",
+        "iPhone 14 Pro Max",
+        "iPhone 15"
+      ],
+      "part_name": "Camera arriere 616-00006",
+      "oem_ref": "616-00006",
+      "category": "camera-rear",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 15",
+        "iPhone 15 Plus",
+        "iPhone 15 Pro"
+      ],
+      "part_name": "Camera avant 616-00007",
+      "oem_ref": "616-00007",
+      "category": "camera-front",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 15 Pro Max",
+        "iPhone 16",
+        "iPhone 16 Plus",
+        "iPhone 16 Pro"
+      ],
+      "part_name": "Haut-parleur 616-00008",
+      "oem_ref": "616-00008",
+      "category": "speaker",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 16 Pro",
+        "iPhone 16 Pro Max",
+        "iPhone 16e"
+      ],
+      "part_name": "Ecouteur interne 616-00009",
+      "oem_ref": "616-00009",
+      "category": "earpiece",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 17",
+        "iPhone 17 Pro",
+        "iPhone 17 Pro Max",
+        "iPhone 17e"
+      ],
+      "part_name": "Microphone 616-00010",
+      "oem_ref": "616-00010",
+      "category": "microphone",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone 17e",
+        "iPhone 18 Pro",
+        "iPhone 18 Pro Max"
+      ],
+      "part_name": "Tiroir SIM 616-00011",
+      "oem_ref": "616-00011",
+      "category": "sim-tray",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "iPhone Air",
+        "iPhone Duo",
+        "Watch SE 3",
+        "Watch Series 10"
+      ],
+      "part_name": "Coque arriere 616-00012",
+      "oem_ref": "616-00012",
+      "category": "back-cover",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 10",
+        "Watch Series 10 Aluminum",
+        "Watch Series 11"
+      ],
+      "part_name": "Nappe boutons 616-00013",
+      "oem_ref": "616-00013",
+      "category": "button-flex",
+      "confidence": "declared",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    },
+    {
+      "brand": "Apple",
+      "models": [
+        "Watch Series 11 Aluminum",
+        "Watch Series 12",
+        "Watch Series 12 Aluminum",
+        "Watch Series 8"
+      ],
+      "part_name": "Nappe intercarte 616-00014",
+      "oem_ref": "616-00014",
+      "category": "interboard-flex",
+      "confidence": "unverified",
+      "notes": "Donnee de demonstration - a verifier en atelier (import Badilk-like). Compatible declaree non verifiee.",
+      "alt_refs": ""
+    }
+  ]
+}
