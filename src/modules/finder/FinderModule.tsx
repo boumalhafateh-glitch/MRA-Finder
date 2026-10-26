@@ -220,9 +220,9 @@ export default function FinderModule() {
     { id: 63, name: 'ZUK', slug: 'zuk', logo_path: '', device_count: 1 },
   ]
   const FALLBACK_STATS: FinderStats = {
-    brands: 63, devices: 389, device_aliases: 0, categories: 0, parts: 0, part_refs: 0,
-    compatibilities: 0, compatibilities_by_status: {}, ics: 0, ic_equivalences: 0, ic_devices: 0, media: 0,
-    import_batches: 0, last_import: null, devices_without_model_ref: 0, devices_without_year: 0, devices_without_image: 0
+    brands: 63, devices: 306, device_aliases: 278, categories: 86, parts: 98, part_refs: 98,
+    compatibilities: 441, compatibilities_by_status: { declared: 147, unverified: 294 }, ics: 0, ic_equivalences: 0, ic_devices: 0, media: 0,
+    import_batches: 1, last_import: null, devices_without_model_ref: 306, devices_without_year: 0, devices_without_image: 306
   }
 
 

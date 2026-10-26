@@ -1,4 +1,4 @@
-﻿// MRA FINDER â€” schÃ©ma additif du module de recherche de piÃ¨ces et d'IC.
+// MRA FINDER â€” schÃ©ma additif du module de recherche de piÃ¨ces et d'IC.
 //
 // RÃ¨gles tenues par ce fichier :
 // - STRICTEMENT ADDITIF : uniquement des CREATE TABLE/INDEX IF NOT EXISTS sur le
@@ -713,6 +713,85 @@ function seedFinderBrands(db) {
   return { added: FINDER_BRAND_SEED.length }
 }
 
+function loadDemoPartsSeed() {
+  const file = path.join(__dirname, 'finder-demo-parts.json')
+  if (!fs.existsSync(file)) return []
+  try {
+    const parsed = JSON.parse(fs.readFileSync(file, 'utf8'))
+    return Array.isArray(parsed.parts) ? parsed.parts : []
+  } catch (e) {
+    return []
+  }
+}
+
+function seedFinderDemoParts(db) {
+  const countParts = db.prepare('SELECT COUNT(*) AS c FROM finder_parts').get().c
+  if (countParts > 0) return { inserted: 0, compat: 0, links: 0 }
+  const demo = loadDemoPartsSeed()
+  if (!demo.length) return { inserted: 0, compat: 0, links: 0 }
+
+  const sourceSlug = 'demo-badilk-like'
+  db.prepare(
+    'INSERT OR IGNORE INTO finder_sources (slug, label, url, license, terms_note) VALUES (?,?,?,?,?)',
+  ).run(sourceSlug, 'Demo Badilk-like - compatibilites non verifiees', '', 'interne-demo', 'Donnees de demonstration marquees unverified/declared - a verifier en atelier. Inspire de Badilk 36k references.')
+  const source = db.prepare('SELECT id FROM finder_sources WHERE slug = ?').get(sourceSlug)
+
+  const findCategory = db.prepare('SELECT id FROM finder_categories WHERE slug = ?')
+  const findBrand = db.prepare('SELECT id FROM finder_brands WHERE slug = ?')
+  const findDevice = db.prepare('SELECT id FROM finder_devices WHERE brand_id = ? AND commercial_name = ?')
+  const insertPart = db.prepare('INSERT OR IGNORE INTO finder_parts (category_id, name, oem_ref, part_type, notes, confidence, source_id) VALUES (?,?,?,?,?,?,?)')
+  const getPart = db.prepare('SELECT id FROM finder_parts WHERE name = ? AND oem_ref = ?')
+  const insertRef = db.prepare('INSERT OR IGNORE INTO finder_part_refs (part_id, kind, value, is_primary, source_id) VALUES (?,?,?,?,?)')
+  const insertLink = db.prepare('INSERT OR IGNORE INTO finder_part_devices (part_id, device_id, role, source_id) VALUES (?,?,?,?)')
+  const insertCompat = db.prepare('INSERT INTO finder_compatibilities (part_id, device_from_id, device_to_id, status, differences, conditions, evidence, source_id) VALUES (?,?,?,?,?,?,?,?)')
+
+  let inserted = 0
+  let compat = 0
+  let links = 0
+
+  const run = () => runInTransaction(db, () => {
+    for (const entry of demo) {
+      if (!entry.part_name || !entry.oem_ref || !entry.category) continue
+      const cat = findCategory.get(entry.category)
+      if (!cat) continue
+      const brand = findBrand.get(slugify(entry.brand))
+      if (!brand) continue
+      // Resolve device ids for this part
+      const deviceIds = []
+      for (const model of entry.models || []) {
+        const dev = findDevice.get(brand.id, model)
+        if (dev) deviceIds.push(dev.id)
+      }
+      if (deviceIds.length < 2) continue
+      const res = insertPart.run(cat.id, entry.part_name, entry.oem_ref, entry.category, entry.notes || '', entry.confidence || 'unverified', source ? source.id : null)
+      const part = getPart.get(entry.part_name, entry.oem_ref)
+      if (!part) continue
+      if (Number(res.changes) > 0) inserted++
+      // OEM ref as primary
+      insertRef.run(part.id, 'oem', entry.oem_ref, 1, source ? source.id : null)
+      for (const did of deviceIds) {
+        const lr = insertLink.run(part.id, did, 'oem', source ? source.id : null)
+        if (Number(lr.changes) > 0) links++
+      }
+      // One compatibility row per unordered pair
+      const status = entry.confidence === 'declared' ? 'declared' : entry.confidence === 'probable' ? 'probable' : 'unverified'
+      for (let i = 0; i < deviceIds.length; i++) {
+        for (let j = i + 1; j < deviceIds.length; j++) {
+          insertCompat.run(part.id, deviceIds[i], deviceIds[j], status, '', '', 'Meme ref OEM ' + entry.oem_ref + ' - demo non verifiee (Badilk-like)', source ? source.id : null)
+          compat++
+        }
+      }
+    }
+  })
+  run()
+  if (inserted > 0 && source) {
+    db.prepare(
+      `INSERT INTO finder_import_batches (source_id, connector, kind, file_name, finished_at, status, inserted, updated, skipped, errors, report) VALUES (?,?,?,?, datetime('now','localtime'), 'ok', ?, 0, 0, 0, ?)`,
+    ).run(source.id, 'seed-demo', 'part', 'finder-demo-parts.json', inserted, JSON.stringify({ addedByDemoSeed: inserted, compat, links }))
+  }
+  return { inserted, compat, links }
+}
+
 function ensureFinderCatalog(db) {
   createFinderTables(db)
 
@@ -730,6 +809,10 @@ function ensureFinderCatalog(db) {
   // additif (INSERT OR IGNORE sur l'unicité marque + modèle + référence) :
   // jamais d'UPDATE, donc une fiche retouchée à l'atelier n'est pas écrasée.
   const seeded = seedFinderCatalog(db)
+  // Demo Badilk-like : si aucune piece n'existe, on peuple ~100 pieces partagees
+  // entre modeles de meme marque (441 compatibilites). Marquees unverified/declared,
+  // jamais confirmed - l'atelier doit verifier.
+  seedFinderDemoParts(db)
 
   // L'index n'est reconstruit que s'il ne couvre plus les tables : un modèle
   // ajouté après coup, une marque nouvelle et une ligne supprimée doivent tous
@@ -755,6 +838,7 @@ module.exports = {
   seedFinderTaxonomy,
   seedFinderBrands,
   seedFinderCatalog,
+  seedFinderDemoParts,
   ensureFinderCatalog,
   rebuildFinderSearch,
   normalizeText,
