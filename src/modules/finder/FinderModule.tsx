@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from 'react'
+import './FinderExact.css'
 import { useTranslation } from '../../contexts/LanguageContext'
 import { getBrandLogoUrl } from './brandLogos'
 import './FinderModule.css'
