@@ -261,6 +261,23 @@ export default function FinderModule() {
   function allMockDevices(): FinderDeviceSummary[] {
     return FALLBACK_BRANDS.flatMap(b => makeMockDevices(b).map(d => ({ ...d, brand_id: (b as any).id } as any)))
   }
+  // Mock circuits/pieces pour preview web (sans Electron) — reflet du seed demo reel
+  const DEMO_PARTS_MOCK = [
+    { id: 1, name: 'Batterie EB-BA101ABY', oem_ref: 'EB-BA101ABY', category_name: 'Batteries' },
+    { id: 2, name: 'Ecran complet EB-BA102ABY', oem_ref: 'EB-BA102ABY', category_name: 'Ecrans OLED / AMOLED' },
+    { id: 3, name: 'Batterie BL-4901T', oem_ref: 'BL-4901T', category_name: 'Batteries' },
+    { id: 4, name: 'Camera arriere EB-BA106ABY', oem_ref: 'EB-BA106ABY', category_name: 'Cameras arriere' },
+    { id: 5, name: 'Connecteur de charge EB-BA104ABY', oem_ref: 'EB-BA104ABY', category_name: 'Ports de charge' },
+    { id: 6, name: 'Nappe boutons BL-4905T', oem_ref: 'BL-4905T', category_name: 'Nappes de boutons' },
+  ]
+  const DEMO_ICS_MOCK = [
+    { id: 1, ref: 'PMI632 902-SAM1', manufacturer: 'Qualcomm', function: 'PMIC principal', family: 'PMIC', package: 'WLCSP' },
+    { id: 2, ref: 'PM8150A-SAM2', manufacturer: 'Qualcomm', function: 'PMIC application', family: 'PMIC', package: 'WLCSP' },
+    { id: 3, ref: 'BQ25606-SAM3', manufacturer: 'TI', function: 'Controleur de charge 2A', family: 'Charger', package: 'QFN24' },
+    { id: 4, ref: 'BQ25895-TEC4', manufacturer: 'TI', function: 'Charge rapide 3A', family: 'Charger', package: 'QFN24' },
+    { id: 5, ref: 'AW87319-SAM6', manufacturer: 'AWINIC', function: 'Ampli audio mono', family: 'Audio', package: 'QFN20' },
+    { id: 6, ref: 'MT6360-TEC5', manufacturer: 'Mediatek', function: 'PMIC Mediatek 5G', family: 'PMIC', package: 'QFN40' },
+  ]
 
   const loadDashboard = useCallback(async () => {
     const api = finderApi(); setStatsError(false)
@@ -372,13 +389,17 @@ export default function FinderModule() {
     if (!term) { setSearchError(t('finder.search.empty_query')); return }
     const api = finderApi()
     if (!api) {
-      // fallback preview web : recherche locale sur marques + modèles de démo (barre unique → composants/modèles/marques)
+      // fallback preview web : recherche locale sur marques + modèles + pieces + circuits de demo
       const q = term.toLowerCase()
       const brandHits: FinderSearchItem[] = FALLBACK_BRANDS.filter(b => b.name.toLowerCase().includes(q) || b.slug.includes(q))
         .slice(0, 8).map(b => ({ kind: 'brand' as const, id: b.id, title: b.name, brand: b }))
       const deviceHits: FinderSearchItem[] = allMockDevices().filter(d => d.commercial_name.toLowerCase().includes(q) || d.model_ref.toLowerCase().includes(q))
         .slice(0, 12).map(d => ({ kind: 'device' as const, id: d.id, title: `${d.brand_name} ${d.commercial_name}`, device: { ...d, brand_id: (d as any).brand_id } as any }))
-      const hits = [...brandHits, ...deviceHits]
+      const partHits: FinderSearchItem[] = DEMO_PARTS_MOCK.filter(p => p.name.toLowerCase().includes(q) || p.oem_ref.toLowerCase().includes(q))
+        .slice(0, 8).map(p => ({ kind: 'part' as const, id: p.id, title: p.name, part: { id: p.id, name: p.name, oem_ref: p.oem_ref, category_name: p.category_name, confidence: 'unverified' } as any }))
+      const icHits: FinderSearchItem[] = DEMO_ICS_MOCK.filter(ic => ic.ref.toLowerCase().includes(q) || ic.function.toLowerCase().includes(q) || ic.manufacturer.toLowerCase().includes(q))
+        .slice(0, 8).map(ic => ({ kind: 'ic' as const, id: ic.id, title: ic.ref, ic: { id: ic.id, ref: ic.ref, manufacturer: ic.manufacturer, function: ic.function, family: ic.family, package: ic.package } as any }))
+      const hits = [...brandHits, ...deviceHits, ...partHits, ...icHits]
       const token2 = beginFlow('search')
       setResult({ items: hits as any, total: hits.length, page: 1, pageSize: hits.length || 1, mode: hits.length ? 'tokens' as const : 'empty' as const } as any)
       setSearching(false)
