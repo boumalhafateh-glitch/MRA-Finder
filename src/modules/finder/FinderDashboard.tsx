@@ -2,20 +2,16 @@ import { useMemo, useState, type ReactNode } from 'react'
 import {
   REF_STATS, REF_BRAND_SLICES, REF_DONUT_ORDER, REF_DONUT_TOTAL, REF_RECENT_MODELS,
   REF_QUICK_BRANDS, REF_QUICK_ACTIONS, REF_RECENT_SEARCHES, REF_TOP_SEARCHES,
-  REF_COVERAGE, REF_MINI_STATS, REF_TABS, REF_NAV,
+  REF_COVERAGE, REF_MINI_STATS, REF_TABS,
 } from './ref-data'
 import {
-  IconHome, IconShop, IconShield, IconSearch, IconFlask, IconGear, IconBrain,
+  IconShield, IconSearch, IconGear,
   IconChevronRight, IconChevronDown, IconClose, IconPlus, IconDoc, IconChip,
   IconConnector, IconPhone, IconDatabase, IconGrid, IconArrowUp, IconSignal,
   IconUser, IconStore, IconCamera, IconTag, IconChart, IconPin,
 } from './ref-icons'
 import './FinderDashboard.css'
 
-const NAV_ICONS = {
-  home: IconHome, shop: IconShop, shield: IconShield, search: IconSearch,
-  flask: IconFlask, gear: IconGear, brain: IconBrain,
-}
 const STAT_ICONS = { phone: IconPhone, shield: IconShield, database: IconDatabase, chip: IconChip }
 const ACTION_ICONS = { plus: IconPlus, doc: IconDoc, pmic: IconChip, connector: IconConnector }
 
@@ -158,37 +154,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
       </header>
 
       <div className="mra-body">
-        {/* ───────────────────────── SIDEBAR ───────────────────────── */}
-        <aside className="mra-sidebar">
-          <nav className="mra-nav">
-            {REF_NAV.map(entry => {
-              const Icon = NAV_ICONS[entry.icon]
-              return (
-                <button
-                  type="button"
-                  key={entry.key}
-                  className={`mra-nav-item${entry.active ? ' is-active' : ''}`}
-                  onClick={() => entry.key === 'finder' ? undefined : undefined}
-                >
-                  <Icon size={25} className="mra-nav-icon" />
-                  <span className="mra-nav-text">
-                    <b>{entry.title}</b>
-                    {entry.sub && <small>{entry.sub}</small>}
-                  </span>
-                  {entry.chevron && <IconChevronRight size={16} className="mra-nav-chevron" />}
-                </button>
-              )
-            })}
-          </nav>
-
-          <div className="mra-mascot">
-            <img src="./images/ref/panther.png" alt="Panthère mécanique MRA" className="mra-mascot-img" />
-            <div className="mra-mascot-label">MRA FINDER</div>
-            <div className="mra-mascot-sub">TROUVE. ANALYSE. RÉPARE.</div>
-          </div>
-        </aside>
-
-        {/* ───────────────────────── ESPACE DE TRAVAIL ───────────────────────── */}
+        {/* ───────────────────────── ESPACE DE TRAVAIL (pleine largeur, sidebar retirée) ───────────────────────── */}
         <div className="mra-workspace">
           {/* Bannière pleine largeur (au-dessus du rail, comme la maquette) */}
           <section className="mra-banner">
