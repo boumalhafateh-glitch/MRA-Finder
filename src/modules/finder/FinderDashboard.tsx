@@ -90,14 +90,20 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
 
   const donutGradient = useMemo(() => {
     const byName = new Map(REF_BRAND_SLICES.map(s => [s.name, s]))
+    // Fins interstices sombres entre chaque portion, comme la maquette
+    const GAP = 0.9
+    const usable = 100 - REF_DONUT_ORDER.length * GAP
     let acc = 0
-    const stops = REF_DONUT_ORDER.map(name => {
+    const stops: string[] = []
+    REF_DONUT_ORDER.forEach(name => {
       const s = byName.get(name)!
-      const start = acc
-      acc += s.percent
-      return `${s.color} ${start.toFixed(2)}% ${acc.toFixed(2)}%`
+      const span = (s.percent * usable) / 100
+      stops.push(`${s.color} ${acc.toFixed(2)}% ${(acc + span).toFixed(2)}%`)
+      acc += span
+      stops.push(`#04101f ${acc.toFixed(2)}% ${(acc + GAP).toFixed(2)}%`)
+      acc += GAP
     })
-    return `conic-gradient(from -8deg, ${stops.join(', ')})`
+    return `conic-gradient(from -90deg, ${stops.join(', ')})`
   }, [])
 
   const maxTop = REF_TOP_SEARCHES[0].count
@@ -107,14 +113,6 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
     <div className="mra-app">
       {/* ───────────────────────── TOPBAR ───────────────────────── */}
       <header className="mra-topbar">
-        <div className="mra-brand">
-          <img src="./images/ref/mra-logo.png" alt="MRA-ERP" className="mra-brand-logo" />
-          <div className="mra-brand-text">
-            <span className="mra-brand-name">MRA-ERP</span>
-            <span className="mra-brand-sub">MASTER REPAIR ACADEMY</span>
-          </div>
-        </div>
-
         <form
           className="mra-topsearch"
           onSubmit={(e) => { e.preventDefault(); if (topQuery.trim()) onSearch(topQuery.trim()) }}
@@ -147,7 +145,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
               <b>FATEH</b>
               <small>Administrateur</small>
             </span>
-            <IconChevronDown size={15} />
+            <span className="mra-user-caret"><IconChevronDown size={14} /></span>
           </button>
           <button type="button" className="mra-gear" aria-label="Paramètres"><IconGear size={21} /></button>
         </div>
@@ -166,7 +164,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
               <span>LE BON MODÈLE...</span>
               <span>AU BON ENDROIT.</span>
             </div>
-            <img src="./images/ref/banner-visual.png" alt="" className="mra-banner-visual" aria-hidden="true" />
+            <img src="./images/ref/banner-scene.png" alt="" className="mra-banner-scene" aria-hidden="true" />
           </section>
 
           <div className="mra-columns">
@@ -207,7 +205,11 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
                             className="mra-legend-row"
                             onClick={() => s.name !== 'Autres' && onOpenBrand(s.name)}
                           >
-                            <span className="mra-legend-swatch" style={{ background: s.color }} />
+                            <span className="mra-legend-swatch" style={{ background: s.color }}>
+                              {s.name === 'Xiaomi' && (
+                                <img src="/brand-logos/xiaomi.svg" alt="" className="mra-legend-mi" aria-hidden="true" />
+                              )}
+                            </span>
                             <span className="mra-legend-name">{s.name}</span>
                             <span className="mra-legend-nums">
                               <b>{s.count}</b>
@@ -281,7 +283,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
                         <div className="mra-ring-center"><b>{REF_COVERAGE}%</b></div>
                       </div>
                       <p className="mra-coverage-text">Des modèles du<br />marché <b>({REF_DONUT_TOTAL})</b></p>
-                      <img src="./images/ref/world-map.png" alt="" className="mra-worldmap" aria-hidden="true" />
+                      <img src="./images/ref/world-map-skyline.png" alt="" className="mra-worldmap" aria-hidden="true" />
                     </div>
                     <div className="mra-mini-stats">
                       {REF_MINI_STATS.map(ms => (
