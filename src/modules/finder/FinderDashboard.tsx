@@ -1,4 +1,4 @@
-import { useMemo, useState, type ReactNode } from 'react'
+import { useLayoutEffect, useMemo, useState, type ReactNode } from 'react'
 import {
   REF_STATS, REF_BRAND_SLICES, REF_DONUT_ORDER, REF_DONUT_TOTAL, REF_RECENT_MODELS,
   REF_QUICK_BRANDS, REF_QUICK_ACTIONS, REF_RECENT_SEARCHES, REF_TOP_SEARCHES,
@@ -76,7 +76,24 @@ function BadgeMark({ brand }: { brand: string }) {
   }
 }
 
+/* Dimensions de la maquette de référence : la scène est figée dans ce cadre,
+   puis réduite/agrandie uniformément pour tenir entièrement dans la fenêtre,
+   sans jamais rogner un élément ni afficher de barre de défilement. */
+const DESIGN_W = 1536
+const DESIGN_H = 1024
+
 export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }: DashboardProps) {
+  const [scale, setScale] = useState(1)
+
+  useLayoutEffect(() => {
+    const compute = () => {
+      setScale(Math.min(window.innerWidth / DESIGN_W, window.innerHeight / DESIGN_H))
+    }
+    compute()
+    window.addEventListener('resize', compute)
+    return () => window.removeEventListener('resize', compute)
+  }, [])
+
   const [quickTab, setQuickTab] = useState<'brand' | 'model' | 'photo'>('brand')
   const [brandQuery, setBrandQuery] = useState('')
   const [topQuery, setTopQuery] = useState('')
@@ -110,7 +127,8 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
   const coverageCirc = 2 * Math.PI * 52
 
   return (
-    <div className="mra-app">
+    <div className="mra-fit-wrap">
+    <div className="mra-app" style={{ transform: `scale(${scale})` }}>
       {/* ───────────────────────── TOPBAR ───────────────────────── */}
       <header className="mra-topbar">
         <form
@@ -436,6 +454,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
           <IconSignal size={18} />
         </div>
       </footer>
+    </div>
     </div>
   )
 }
