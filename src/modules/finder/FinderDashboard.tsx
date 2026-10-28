@@ -1,21 +1,17 @@
-import { useMemo, useState, type ReactNode } from 'react'
+import { useLayoutEffect, useMemo, useState, type ReactNode } from 'react'
 import {
   REF_STATS, REF_BRAND_SLICES, REF_DONUT_ORDER, REF_DONUT_TOTAL, REF_RECENT_MODELS,
   REF_QUICK_BRANDS, REF_QUICK_ACTIONS, REF_RECENT_SEARCHES, REF_TOP_SEARCHES,
-  REF_COVERAGE, REF_MINI_STATS, REF_TABS, REF_NAV,
+  REF_COVERAGE, REF_MINI_STATS, REF_TABS,
 } from './ref-data'
 import {
-  IconHome, IconShop, IconShield, IconSearch, IconFlask, IconGear, IconBrain,
+  IconShield, IconSearch, IconGear,
   IconChevronRight, IconChevronDown, IconClose, IconPlus, IconDoc, IconChip,
   IconConnector, IconPhone, IconDatabase, IconGrid, IconArrowUp, IconSignal,
   IconUser, IconStore, IconCamera, IconTag, IconChart, IconPin,
 } from './ref-icons'
 import './FinderDashboard.css'
 
-const NAV_ICONS = {
-  home: IconHome, shop: IconShop, shield: IconShield, search: IconSearch,
-  flask: IconFlask, gear: IconGear, brain: IconBrain,
-}
 const STAT_ICONS = { phone: IconPhone, shield: IconShield, database: IconDatabase, chip: IconChip }
 const ACTION_ICONS = { plus: IconPlus, doc: IconDoc, pmic: IconChip, connector: IconConnector }
 
@@ -80,7 +76,24 @@ function BadgeMark({ brand }: { brand: string }) {
   }
 }
 
+/* Dimensions de la maquette de référence : la scène est figée dans ce cadre,
+   puis réduite/agrandie uniformément pour tenir entièrement dans la fenêtre,
+   sans jamais rogner un élément ni afficher de barre de défilement. */
+const DESIGN_W = 1536
+const DESIGN_H = 1024
+
 export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }: DashboardProps) {
+  const [scale, setScale] = useState(1)
+
+  useLayoutEffect(() => {
+    const compute = () => {
+      setScale(Math.min(window.innerWidth / DESIGN_W, window.innerHeight / DESIGN_H))
+    }
+    compute()
+    window.addEventListener('resize', compute)
+    return () => window.removeEventListener('resize', compute)
+  }, [])
+
   const [quickTab, setQuickTab] = useState<'brand' | 'model' | 'photo'>('brand')
   const [brandQuery, setBrandQuery] = useState('')
   const [topQuery, setTopQuery] = useState('')
@@ -94,31 +107,30 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
 
   const donutGradient = useMemo(() => {
     const byName = new Map(REF_BRAND_SLICES.map(s => [s.name, s]))
+    // Fins interstices sombres entre chaque portion, comme la maquette
+    const GAP = 0.9
+    const usable = 100 - REF_DONUT_ORDER.length * GAP
     let acc = 0
-    const stops = REF_DONUT_ORDER.map(name => {
+    const stops: string[] = []
+    REF_DONUT_ORDER.forEach(name => {
       const s = byName.get(name)!
-      const start = acc
-      acc += s.percent
-      return `${s.color} ${start.toFixed(2)}% ${acc.toFixed(2)}%`
+      const span = (s.percent * usable) / 100
+      stops.push(`${s.color} ${acc.toFixed(2)}% ${(acc + span).toFixed(2)}%`)
+      acc += span
+      stops.push(`#04101f ${acc.toFixed(2)}% ${(acc + GAP).toFixed(2)}%`)
+      acc += GAP
     })
-    return `conic-gradient(from -8deg, ${stops.join(', ')})`
+    return `conic-gradient(from -90deg, ${stops.join(', ')})`
   }, [])
 
   const maxTop = REF_TOP_SEARCHES[0].count
   const coverageCirc = 2 * Math.PI * 52
 
   return (
-    <div className="mra-app">
+    <div className="mra-fit-wrap">
+    <div className="mra-app" style={{ transform: `scale(${scale})` }}>
       {/* ───────────────────────── TOPBAR ───────────────────────── */}
       <header className="mra-topbar">
-        <div className="mra-brand">
-          <img src="./images/ref/mra-logo.png" alt="MRA-ERP" className="mra-brand-logo" />
-          <div className="mra-brand-text">
-            <span className="mra-brand-name">MRA-ERP</span>
-            <span className="mra-brand-sub">MASTER REPAIR ACADEMY</span>
-          </div>
-        </div>
-
         <form
           className="mra-topsearch"
           onSubmit={(e) => { e.preventDefault(); if (topQuery.trim()) onSearch(topQuery.trim()) }}
@@ -151,44 +163,14 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
               <b>FATEH</b>
               <small>Administrateur</small>
             </span>
-            <IconChevronDown size={15} />
+            <span className="mra-user-caret"><IconChevronDown size={14} /></span>
           </button>
           <button type="button" className="mra-gear" aria-label="Paramètres"><IconGear size={21} /></button>
         </div>
       </header>
 
       <div className="mra-body">
-        {/* ───────────────────────── SIDEBAR ───────────────────────── */}
-        <aside className="mra-sidebar">
-          <nav className="mra-nav">
-            {REF_NAV.map(entry => {
-              const Icon = NAV_ICONS[entry.icon]
-              return (
-                <button
-                  type="button"
-                  key={entry.key}
-                  className={`mra-nav-item${entry.active ? ' is-active' : ''}`}
-                  onClick={() => entry.key === 'finder' ? undefined : undefined}
-                >
-                  <Icon size={25} className="mra-nav-icon" />
-                  <span className="mra-nav-text">
-                    <b>{entry.title}</b>
-                    {entry.sub && <small>{entry.sub}</small>}
-                  </span>
-                  {entry.chevron && <IconChevronRight size={16} className="mra-nav-chevron" />}
-                </button>
-              )
-            })}
-          </nav>
-
-          <div className="mra-mascot">
-            <img src="./images/ref/panther.png" alt="Panthère mécanique MRA" className="mra-mascot-img" />
-            <div className="mra-mascot-label">MRA FINDER</div>
-            <div className="mra-mascot-sub">TROUVE. ANALYSE. RÉPARE.</div>
-          </div>
-        </aside>
-
-        {/* ───────────────────────── ESPACE DE TRAVAIL ───────────────────────── */}
+        {/* ───────────────────────── ESPACE DE TRAVAIL (pleine largeur, sidebar retirée) ───────────────────────── */}
         <div className="mra-workspace">
           {/* Bannière pleine largeur (au-dessus du rail, comme la maquette) */}
           <section className="mra-banner">
@@ -200,7 +182,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
               <span>LE BON MODÈLE...</span>
               <span>AU BON ENDROIT.</span>
             </div>
-            <img src="./images/ref/banner-visual.png" alt="" className="mra-banner-visual" aria-hidden="true" />
+            <img src="./images/ref/banner-scene.png" alt="" className="mra-banner-scene" aria-hidden="true" />
           </section>
 
           <div className="mra-columns">
@@ -241,7 +223,11 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
                             className="mra-legend-row"
                             onClick={() => s.name !== 'Autres' && onOpenBrand(s.name)}
                           >
-                            <span className="mra-legend-swatch" style={{ background: s.color }} />
+                            <span className="mra-legend-swatch" style={{ background: s.color }}>
+                              {s.name === 'Xiaomi' && (
+                                <img src="/brand-logos/xiaomi.svg" alt="" className="mra-legend-mi" aria-hidden="true" />
+                              )}
+                            </span>
                             <span className="mra-legend-name">{s.name}</span>
                             <span className="mra-legend-nums">
                               <b>{s.count}</b>
@@ -315,7 +301,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
                         <div className="mra-ring-center"><b>{REF_COVERAGE}%</b></div>
                       </div>
                       <p className="mra-coverage-text">Des modèles du<br />marché <b>({REF_DONUT_TOTAL})</b></p>
-                      <img src="./images/ref/world-map.png" alt="" className="mra-worldmap" aria-hidden="true" />
+                      <img src="./images/ref/world-map-skyline.png" alt="" className="mra-worldmap" aria-hidden="true" />
                     </div>
                     <div className="mra-mini-stats">
                       {REF_MINI_STATS.map(ms => (
@@ -468,6 +454,7 @@ export default function FinderDashboard({ onSearch, onOpenBrand, onOpenImport }:
           <IconSignal size={18} />
         </div>
       </footer>
+    </div>
     </div>
   )
 }

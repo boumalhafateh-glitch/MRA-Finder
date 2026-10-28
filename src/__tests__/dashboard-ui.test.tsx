@@ -41,12 +41,10 @@ describe('MRA FINDER — tableau de bord de référence', () => {
     expect(screen.getAllByText('FINDER').length).toBeGreaterThan(0)
   })
 
-  test('reproduit les sept entrées de navigation latérale', () => {
+  test('la barre latérale a été retirée du tableau de bord', () => {
     const { container } = renderDashboard()
-    const nav = container.querySelector('.mra-nav')!
-    for (const entry of ['DASHBOARD', 'MAGASIN', 'SAV', 'FINDER', 'LAB', 'PARAMÈTRES', 'ZAWALI AI']) {
-      expect(within(nav).getByText(entry)).toBeTruthy()
-    }
+    expect(container.querySelector('.mra-sidebar')).toBeNull()
+    expect(container.querySelector('.mra-nav')).toBeNull()
   })
 
   test('liste les six modèles récemment ajoutés avec leurs dates', () => {
